@@ -1,7 +1,6 @@
 "use client";
 
 import { Mail, Terminal, CheckCircle2 } from "lucide-react";
-import BlueprintGenerator from "@/components/BlueprintGenerator";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -61,7 +60,7 @@ export default function ContactPage() {
                         </div>
                         <h2 className="text-3xl font-bold text-white mb-4">Message Received.</h2>
                         <p className="text-lg text-slate-400 mb-8 max-w-md">
-                            Your inquiry has been securely routed to our internal Slack channel <code className="text-emerald-400 font-mono">#agent</code>. Our engineering team will review it shortly.
+                            Your inquiry has been securely routed to our engineering team. We will review it and get back to you shortly.
                         </p>
                         <button
                             onClick={() => setIsSuccess(false)}
@@ -136,15 +135,6 @@ export default function ContactPage() {
                 )}
             </div>
 
-            {/* AI Architect Section */}
-            <div className="w-full max-w-4xl text-center mb-8">
-                <h2 className="text-3xl font-bold text-white mb-4">Not sure where to start?</h2>
-                <p className="text-slate-400">Use our generative AI architect to draft a blueprint for your specific bottleneck.</p>
-            </div>
-
-            <div className="w-full max-w-4xl">
-                <BlueprintGenerator />
-            </div>
         </div>
     );
 }
