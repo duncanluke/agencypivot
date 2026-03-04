@@ -35,7 +35,7 @@ export default function Home() {
               Book an AI Audit
             </Link>
             <Link href="/services" className="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center">
-              View Demos
+              Services
             </Link>
           </div>
         </motion.div>
