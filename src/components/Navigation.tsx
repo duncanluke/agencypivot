@@ -12,7 +12,7 @@ export default function Navigation() {
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 <Link href="/" className="text-xl font-black tracking-tighter flex items-center gap-2">
                     <Bot className="w-8 h-8 text-indigo-500" />
-                    <span className="text-white">The Social Collective <span className="text-indigo-500">AI</span></span>
+                    <span className="text-white">ai.collective.<span className="text-indigo-500">social</span></span>
                 </Link>
                 <div className="hidden md:flex gap-8 text-sm font-medium text-slate-300">
                     <Link href="/services" className={`hover:text-indigo-400 transition-colors ${pathname === '/services' ? 'text-indigo-400' : ''}`}>Services</Link>
