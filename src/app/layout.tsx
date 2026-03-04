@@ -15,8 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Social Collective AI",
-  description: "We build AI Agents that run your business.",
+  title: "ai.collective.social | AI Agents & Automation",
+  description: "Specialized software engineering for the AI era. We build custom Slack bots, workflow automation, and fast web apps for businesses in South Africa, Cape Town, and Johannesburg.",
+  keywords: "AI Development Agency, Custom AI Agents, Workflow Automation, Software Engineering, Cape Town, Johannesburg, South Africa, Slack Bots, Next.js",
+  openGraph: {
+    title: "ai.collective.social | AI Agents & Automation",
+    description: "We build AI Agents that run your business. Based in South Africa, serving Cape Town & Johannesburg.",
+    siteName: "ai.collective.social",
+  }
 };
 
 export default function RootLayout({

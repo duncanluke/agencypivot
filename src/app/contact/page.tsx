@@ -28,11 +28,12 @@ export default function ContactPage() {
                 setIsSuccess(true);
                 form.reset();
             } else {
-                alert("Failed to send message. Please try again.");
+                const errData = await res.json().catch(() => ({}));
+                alert(`Error: ${errData.error || "Failed to send message. Please try again."}`);
             }
         } catch (err) {
             console.error(err);
-            alert("Failed to send message. Please try again.");
+            alert("Network error. Failed to send message.");
         } finally {
             setIsSubmitting(false);
         }

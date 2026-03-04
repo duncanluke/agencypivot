@@ -21,7 +21,7 @@ export async function POST(req: Request) {
 
         const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
-        const prompt = `You are a brilliant Senior Solution Architect working for 'The Social Collective AI' agency. 
+        const prompt = `You are a brilliant Senior Solution Architect working for 'ai.collective.social' agency. 
 We specialize in 2-week sprints to solve 80/20 operational bottlenecks using modern automation, AI agents, specialized dashboards, and custom web apps.
 
 A potential client has submitted the following operational bottleneck:
