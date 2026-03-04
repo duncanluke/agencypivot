@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { Bot, Cpu, Zap, ArrowRight, Mail, Factory, Heart, Stethoscope, Map, Settings } from "lucide-react";
 import Hero3D from "@/components/Hero3D";
 import Link from "next/link";
-import BlueprintGenerator from "@/components/BlueprintGenerator";
 
 export default function Home() {
   return (
@@ -179,10 +178,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Interactive Blueprint Generator */}
-      <section id="blueprint" className="py-24 px-6 max-w-4xl mx-auto w-full">
-        <BlueprintGenerator />
-      </section>
 
       {/* CTA Section */}
       <section id="contact" className="py-20 px-6 border-t border-slate-800/50 bg-[#03050a] text-center w-full">
