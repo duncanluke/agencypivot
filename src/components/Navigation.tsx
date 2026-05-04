@@ -15,12 +15,11 @@ export default function Navigation() {
                     <span className="text-white">ai.collective.<span className="text-indigo-500">social</span></span>
                 </Link>
                 <div className="hidden md:flex gap-8 text-sm font-medium text-slate-300">
-                    <Link href="/services" className={`hover:text-indigo-400 transition-colors ${pathname === '/services' ? 'text-indigo-400' : ''}`}>Services</Link>
-                    <Link href="/process" className={`hover:text-indigo-400 transition-colors ${pathname === '/process' ? 'text-indigo-400' : ''}`}>Process</Link>
-                    <Link href="/contact" className={`hover:text-indigo-400 transition-colors ${pathname === '/contact' ? 'text-indigo-400' : ''}`}>Contact</Link>
+                    <Link href="/#services" className={`hover:text-indigo-400 transition-colors ${pathname === '/services' ? 'text-indigo-400' : ''}`}>Solutions</Link>
+                    <Link href="/#process" className={`hover:text-indigo-400 transition-colors ${pathname === '/process' ? 'text-indigo-400' : ''}`}>Process</Link>
                 </div>
-                <Link href="/contact" className="bg-white text-black px-6 py-2.5 rounded-full font-bold text-sm hover:scale-105 transition-transform flex items-center gap-2">
-                    Let&apos;s Talk <ArrowRight className="w-4 h-4" />
+                <Link href="/#audit" className="bg-white text-black px-6 py-2.5 rounded-full font-bold text-sm hover:scale-105 transition-transform flex items-center gap-2">
+                    Free AI Blueprint <ArrowRight className="w-4 h-4" />
                 </Link>
             </div>
         </nav>
