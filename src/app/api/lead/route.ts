@@ -31,19 +31,19 @@ export async function POST(req: Request) {
             const senderEmail = process.env.MAILERSEND_FROM_EMAIL || "team@collective.social";
             
             const payload = {
-                from: { email: senderEmail, name: "AI Collective" },
+                from: { email: senderEmail, name: "Social Collective" },
                 to: [ { email: email, name: "Visionary Founder" } ],
-                subject: "Your Architecture Blueprint from AI Collective",
+                subject: "Your Architecture Blueprint from Social Collective",
                 html: `
                     <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #111;">
-                        <h2 style="color: #4f46e5;">Welcome to AI Collective.</h2>
+                        <h2 style="color: #4f46e5;">Welcome to Social Collective.</h2>
                         <p>Hi there,</p>
                         <p>Thank you for requesting an Architecture Blueprint. We have received your request and our engineering team is reviewing your details.</p>
                         <p>To dive straight into how Agentic workflows can solve your exact bottleneck, grab a time directly on our calendar here:</p>
                         <p style="margin: 30px 0;">
                             <a href="https://calendly.com/" style="background-color: #4f46e5; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold;">Book Your Deep Dive</a>
                         </p>
-                        <p>Looking forward to automating your scale,<br/><strong>The AI Collective Team</strong></p>
+                        <p>Looking forward to automating your scale,<br/><strong>The Social Collective Team</strong></p>
                     </div>
                 `,
                 text: "Thank you for requesting the Architecture Blueprint. Please book a free audit with us to discuss it at https://calendly.com/"
