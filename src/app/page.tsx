@@ -24,10 +24,10 @@ export default function Home() {
             <Zap className="w-4 h-4" /> Stop experimenting. Start scaling.
           </div>
           <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6 tracking-tight">
-            We build <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">AI Pipelines</span> <br className="hidden md:block" /> that deliver ROI.
+            We build <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">AI Workflows</span> <br className="hidden md:block" /> that deliver ROI.
           </h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed font-medium">
-            We are the specialized software engineering team for the AI era. From Agentic workflows for enterprise to automated ESG compliance reporting and scalable MVP development for visionary founders.
+            We are the specialized software technology team for the AI era. From smart automated workflows for enterprise to ESG compliance reporting and scalable MVP development for visionary founders.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -54,22 +54,22 @@ export default function Home() {
               icon={<ShieldCheck className="w-10 h-10 text-emerald-400" />}
               title="Social Impact & ESG"
               subtitle="For Sustainability & CSR Directors"
-              description="New reporting mandates (CSRD) are burying your team in PDFs. We build automated data pipelines that parse unstructured supply chain data and auto-generate compliance gap analysis in real-time."
-              points={["Automated ESG Data Pipelines", "Real-time Compliance Dashboards", "Supply Chain Analytics"]}
+              description="New reporting mandates (CSRD) are burying your team in PDFs. We build automated systems that parse unstructured supply chain data and auto-generate compliance gap analysis in real-time."
+              points={["Automated ESG Data Systems", "Real-time Compliance Dashboards", "Supply Chain Analytics"]}
             />
             <SolutionCard
               icon={<Code2 className="w-10 h-10 text-cyan-400" />}
               title="Startup MVPs & GenAI"
               subtitle="For Visionary Tech Founders"
-              description="Stop burning runway on basic wrappers. Act as your Fractional CTO to design scalable ML infrastructures, rapid MVP prototyping, and defensible AI software architectures."
-              points={["Lean AI Prototyping", "Scalable MLOps Architecture", "Fractional CTO Advisory"]}
+              description="Stop burning runway on basic wrappers. Act as your Fractional CTO to design scalable software foundations, rapid MVP prototyping, and defensible tech systems."
+              points={["Lean AI Prototyping", "Scalable Tech Foundations", "Fractional CTO Advisory"]}
             />
             <SolutionCard
               icon={<Bot className="w-10 h-10 text-indigo-400" />}
               title="Corporate Agentic AI"
               subtitle="For Enterprise Innovation"
-              description="Move beyond chatbots. We deploy multi-agent systems woven straight into your core ERPs and CRMs to execute multi-step workflows autonomously and drive massive operational efficiency."
-              points={["Multi-Agent Orchestration", "ERP/CRM Direct Integration", "Business Workflow Autonomy"]}
+              description="Move beyond chatbots. We deploy smart automated systems woven straight into your core ERPs and CRMs to execute multi-step workflows autonomously and drive massive operational efficiency."
+              points={["Smart Workflow Automation", "Direct Software Integration", "Business Workflow Autonomy"]}
             />
           </div>
         </div>
@@ -81,7 +81,7 @@ export default function Home() {
           <div className="text-center mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">The 2-Week Sprint Methodology.</h2>
             <p className="text-slate-400 text-lg md:text-xl leading-relaxed">
-              We move incredibly fast without breaking things. Our engineered sprints guarantee that your project goes from concept to a tangible, ROI-producing asset in absolute minimum time.
+              We move incredibly fast without breaking things. Our focused sprints guarantee that your project goes from concept to a tangible, ROI-producing asset in absolute minimum time.
             </p>
           </div>
 
@@ -90,13 +90,13 @@ export default function Home() {
               <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
                 <ProcessStepItem
                   number="01"
-                  title="Architecture Deep-Dive"
-                  description="We map out the exact business bottleneck, audit your data readiness, and create a technical blueprint."
+                  title="System Deep-Dive"
+                  description="We map out the exact business bottleneck, audit your data readiness, and create a clear technical plan."
                 />
                 <ProcessStepItem
                   number="02"
-                  title="Rapid Engineering"
-                  description="A dedicated engineering pod builds the necessary pipelines, APIs, and interfaces using Next.js and robust cloud infrastructure."
+                  title="Rapid Development"
+                  description="A dedicated engineering pod builds the necessary workflows and interfaces using robust modern technology."
                 />
                 <ProcessStepItem
                   number="03"
