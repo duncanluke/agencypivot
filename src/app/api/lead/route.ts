@@ -28,7 +28,7 @@ export async function POST(req: Request) {
         // 2. Send the Blueprint via MailerSend HTTP API
         const mailerSendApiKey = process.env.MAILERSEND_API_KEY;
         if (mailerSendApiKey) {
-            const senderEmail = process.env.MAILERSEND_FROM_EMAIL || "hello@thesocialcollective.co";
+            const senderEmail = process.env.MAILERSEND_FROM_EMAIL || "team@collective.social";
             
             const payload = {
                 from: { email: senderEmail, name: "AI Collective" },
