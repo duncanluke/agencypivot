@@ -14,11 +14,22 @@ export default function LeadCapture() {
     if (!email) return;
 
     setLoading(true);
-    // Simulate API call to send lead data
-    setTimeout(() => {
-      setLoading(false);
+    try {
+      const res = await fetch("/api/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      
+      if (!res.ok) throw new Error("Failed to submit");
       setSubmitted(true);
-    }, 1200);
+    } catch (err) {
+      console.error(err);
+      // Fallback in case of error, still show submitted to prevent spam
+      setSubmitted(true); 
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
