@@ -19,7 +19,7 @@ export default function Navigation() {
                     <Link href="/#process" className={`hover:text-indigo-400 transition-colors ${pathname === '/process' ? 'text-indigo-400' : ''}`}>Process</Link>
                 </div>
                 <Link href="/#audit" className="bg-white text-black px-6 py-2.5 rounded-full font-bold text-sm hover:scale-105 transition-transform flex items-center gap-2">
-                    Free AI Blueprint <ArrowRight className="w-4 h-4" />
+                    Learn More <ArrowRight className="w-4 h-4" />
                 </Link>
             </div>
         </nav>
