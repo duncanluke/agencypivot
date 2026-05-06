@@ -20,7 +20,7 @@ export async function POST(req: Request) {
                 },
                 body: JSON.stringify({
                     channel: "#agent",
-                    text: `🚨 *New Blueprint Lead Captured:* ${email}`,
+                    text: `🚨 *New Audit Call Request:* ${email}`,
                 }),
             }).catch(e => console.error("Slack warning: ", e)); 
         }
@@ -33,20 +33,21 @@ export async function POST(req: Request) {
             const payload = {
                 from: { email: senderEmail, name: "Social Collective" },
                 to: [ { email: email, name: "Visionary Founder" } ],
-                subject: "Your Architecture Blueprint from Social Collective",
+                subject: "Your Opportunity Audit from Social Collective",
                 html: `
                     <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #111;">
                         <h2 style="color: #4f46e5;">Welcome to Social Collective.</h2>
                         <p>Hi there,</p>
-                        <p>Thank you for requesting an Architecture Blueprint. We have received your request and our engineering team is reviewing your details.</p>
-                        <p>To dive straight into how Agentic workflows can solve your exact bottleneck, grab a time directly on our calendar here:</p>
+                        <p>Thank you for reaching out. The next step is a brief, zero-pressure discovery call where we can unpack your operational bottlenecks and understand how your business works.</p>
+                        <p>After the call, we will generate a customized <strong>Opportunity Audit Report</strong> for you to keep. This report clearly identifies where AI agents and Live Dashboards can modernize your stack.</p>
+                        <p>To get started, please grab a time directly on our calendar here:</p>
                         <p style="margin: 30px 0;">
-                            <a href="https://calendly.com/" style="background-color: #4f46e5; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold;">Book Your Deep Dive</a>
+                            <a href="https://calendly.com/" style="background-color: #4f46e5; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold;">Book Your Discovery Call</a>
                         </p>
-                        <p>Looking forward to automating your scale,<br/><strong>The Social Collective Team</strong></p>
+                        <p>Looking forward to speaking with you,<br/><strong>The Social Collective Team</strong></p>
                     </div>
                 `,
-                text: "Thank you for requesting the Architecture Blueprint. Please book a free audit with us to discuss it at https://calendly.com/"
+                text: "Thank you for reaching out. Please book a brief discovery call with us so we can begin unpacking your processes and generating your free Opportunity Audit Report: https://calendly.com/"
             };
 
             const mailerRes = await fetch("https://api.mailersend.com/v1/email", {

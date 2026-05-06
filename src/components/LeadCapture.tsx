@@ -41,14 +41,12 @@ export default function LeadCapture() {
       <div className="relative z-10 flex flex-col md:flex-row gap-10 items-center">
         <div className="flex-1 text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-bold uppercase tracking-wider mb-6">
-            Free Architecture Blueprint
+            Free Opportunity Audit Report
           </div>
           <h3 className="text-3xl md:text-4xl font-black text-white mb-4 leading-tight">
             Ready to stop experimenting and start <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">scaling</span>?
           </h3>
-          <p className="text-slate-400 text-lg leading-relaxed mb-6">
-            Enter your email below to receive a free, comprehensive breakdown of how Agentic AI can solve your specific bottleneck and deliver hard ROI in 2026.
-          </p>
+            Enter your email below. We'll do a quick discovery call to understand your processes, and then generate a customized opportunity audit report showing where AI and automation can modernize your specific business. You keep the report.
           
           <div className="flex flex-wrap gap-3">
             <div className="flex items-center gap-2 text-sm text-slate-300">
@@ -57,11 +55,11 @@ export default function LeadCapture() {
             </div>
             <div className="flex items-center gap-2 text-sm text-slate-300">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>Implementation Roadmap</span>
+              <span>Live Discovery Call</span>
             </div>
             <div className="flex items-center gap-2 text-sm text-slate-300">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>Tech Stack Recommendation</span>
+              <span>Custom Opportunity Audit</span>
             </div>
           </div>
         </div>
@@ -98,7 +96,7 @@ export default function LeadCapture() {
                   <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                 ) : (
                   <>
-                    Get My Blueprint <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    Request Audit Call <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}
               </button>

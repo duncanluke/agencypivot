@@ -24,15 +24,15 @@ export default function Home() {
             <Zap className="w-4 h-4" /> Stop experimenting. Start scaling.
           </div>
           <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6 tracking-tight">
-            We build <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">AI Workflows</span> <br className="hidden md:block" /> that deliver ROI.
+            We help you move processes onto <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">AI Agents</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed font-medium">
-            We are the specialized software technology team for the AI era. From smart automated workflows for enterprise to ESG compliance reporting and scalable MVP development for visionary founders.
+            We modernise your business by moving slow processes onto Live Dashboards with supporting AI automation. Offering a highly personal service in Johannesburg and Cape Town.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#audit" className="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-[0_0_30px_rgba(79,70,229,0.3)] hover:shadow-[0_0_40px_rgba(79,70,229,0.5)] flex items-center justify-center">
-              Request Your AI Blueprint
+              Request Your Free Audit
             </a>
             <a href="#services" className="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center">
               Explore Solutions
@@ -46,30 +46,30 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-black text-white mb-6">Outcome-Driven Engineering</h2>
-            <p className="text-slate-400 text-lg">We don't sell "AI buzzwords". We engineer robust solutions that target the most painful bottlenecks in three specific vertical markets.</p>
+            <p className="text-slate-400 text-lg">We dive deep into your operations to uncover opportunities for modernization and automation in South Africa's core service industries.</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <SolutionCard
               icon={<ShieldCheck className="w-10 h-10 text-emerald-400" />}
-              title="Social Impact & ESG"
-              subtitle="For Sustainability & CSR Directors"
-              description="New reporting mandates (CSRD) are burying your team in PDFs. We build automated systems that parse unstructured supply chain data and auto-generate compliance gap analysis in real-time."
-              points={["Automated ESG Data Systems", "Real-time Compliance Dashboards", "Supply Chain Analytics"]}
+              title="Finance & Insurance"
+              subtitle="Governance & Assessment"
+              description="Navigating intense regulatory pressure requires absolute precision. We build automated systems that gather messy data, assess risks, and instantly generate live compliance dashboards without human error."
+              points={["Automated Document Processing", "Real-time Compliance Dashboards", "Risk Assessment Agents"]}
             />
             <SolutionCard
               icon={<Code2 className="w-10 h-10 text-cyan-400" />}
-              title="Startup MVPs & GenAI"
-              subtitle="For Visionary Tech Founders"
-              description="Stop burning runway on basic wrappers. Act as your Fractional CTO to design scalable software foundations, rapid MVP prototyping, and defensible tech systems."
-              points={["Lean AI Prototyping", "Scalable Tech Foundations", "Fractional CTO Advisory"]}
+              title="Healthcare & FMCG"
+              subtitle="Operations & Supply Chain"
+              description="Stop letting slow supply chains and scheduling bleed your margins. We design scalable tech foundations that automate inventory tracking and patient workflows instantly."
+              points={["Supply Chain Autonomy", "Live Operational Dashboards", "Automated Scheduling"]}
             />
             <SolutionCard
               icon={<Bot className="w-10 h-10 text-indigo-400" />}
-              title="Corporate Agentic AI"
-              subtitle="For Enterprise Innovation"
-              description="Move beyond chatbots. We deploy smart automated systems woven straight into your core ERPs and CRMs to execute multi-step workflows autonomously and drive massive operational efficiency."
-              points={["Smart Workflow Automation", "Direct Software Integration", "Business Workflow Autonomy"]}
+              title="Corporate Training"
+              subtitle="Education & HR"
+              description="Move beyond static PDFs. We deploy smart automated systems that adapt to individual employee progress, track credentials live, and modernize your entire learning methodology."
+              points={["Smart Feedback Loops", "Live Certification Dashboards", "Employee Progress Tracking"]}
             />
           </div>
         </div>
@@ -79,9 +79,9 @@ export default function Home() {
       <section id="process" className="py-24 px-6 justify-center">
         <div className="max-w-7xl mx-auto flex flex-col items-center">
           <div className="text-center mb-16 max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">The 2-Week Sprint Methodology.</h2>
+            <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">Our Process.</h2>
             <p className="text-slate-400 text-lg md:text-xl leading-relaxed">
-              We move incredibly fast without breaking things. Our focused sprints guarantee that your project goes from concept to a tangible, ROI-producing asset in absolute minimum time.
+              We focus on building a relationship first. We start with a conversation, identify absolute clarity on the opportunity, and then deliver your free, detailed audit report to keep.
             </p>
           </div>
 
@@ -90,23 +90,23 @@ export default function Home() {
               <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
                 <ProcessStepItem
                   number="01"
-                  title="System Deep-Dive"
-                  description="We map out the exact business bottleneck, audit your data readiness, and create a clear technical plan."
+                  title="Show Interest"
+                  description="Drop your email below. No friction, no spam. We just establish a genuine connection."
                 />
                 <ProcessStepItem
                   number="02"
-                  title="Rapid Development"
-                  description="A dedicated engineering pod builds the necessary workflows and interfaces using robust modern technology."
+                  title="Quick Discovery Call"
+                  description="We jump on a brief, personal call. You explain your current operational bottlenecks, and we ask the right questions."
                 />
                 <ProcessStepItem
                   number="03"
-                  title="Agent Training & Integration"
-                  description="We don't build in a silo. We integrate the logic directly into your existing ops (Salesforce, Slack, Sheets)."
+                  title="Opportunity Audit Report"
+                  description="We analyze the conversation and generate a detailed report identifying where AI agents and Dashboards can modernize your stack."
                 />
                 <ProcessStepItem
                   number="04"
-                  title="Deploy & Track ROI"
-                  description="We push to production, run QA, and give you explicit dashboards to track the time/money saved."
+                  title="You Keep the Report"
+                  description="If there's an opportunity, we can build it. If not, you walk away with a highly valuable analysis of your business, absolutely free."
                 />
               </div>
             </div>
