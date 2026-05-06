@@ -46,7 +46,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-black text-white mb-6">Outcome-Driven Engineering</h2>
-            <p className="text-slate-400 text-lg">We dive deep into your operations to uncover opportunities for modernization and automation in South Africa's core service industries.</p>
+            <p className="text-slate-400 text-lg mb-6">We dive deep into your operations to uncover opportunities for modernization and automation in South Africa's core service industries.</p>
+            <p className="text-indigo-300 text-lg font-medium border border-indigo-500/30 bg-indigo-500/10 p-6 rounded-2xl shadow-xl text-left">
+              You know what you want to build, but you might not have an internal tech team, the time, or the risk appetite to experiment with AI on your own. You just need a partner you can trust to execute the product and support you through the transition.
+            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -71,6 +74,53 @@ export default function Home() {
               description="Move beyond static PDFs. We deploy smart automated systems that adapt to individual employee progress, track credentials live, and modernize your entire learning methodology."
               points={["Smart Feedback Loops", "Live Certification Dashboards", "Employee Progress Tracking"]}
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Team / Heritage Section */}
+      <section className="py-24 px-6 relative bg-gradient-to-b from-[#080d1a] to-[#05080f]">
+        <div className="max-w-7xl mx-auto">
+          <div className="bg-[#05080f]/80 border border-slate-800 rounded-3xl p-10 md:p-16 relative overflow-hidden flex flex-col md:flex-row gap-12 items-center">
+            {/* Glows */}
+            <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-500/10 blur-[120px] pointer-events-none" />
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-500/10 blur-[120px] pointer-events-none" />
+
+            <div className="w-full md:w-1/2 relative z-10">
+              <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
+                Built on 15 Years of <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Enterprise Engineering.</span>
+              </h2>
+              <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                We've been writing full-stack code for over 15 years, developing robust applications and operational systems into large, international listed companies. 
+              </p>
+              <p className="text-slate-400 text-lg leading-relaxed">
+                We specialize in tracking complicated offline elements and turning that messy information into automated dashboards which are actually useful. Now, we're bringing those exact enterprise-grade benefits to more businesses—using AI to expand your team's capacity for low-hanging tasks and fix high-priority issues with innovation.
+              </p>
+            </div>
+
+            <div className="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
+              <div className="bg-slate-900/50 border border-slate-700 p-6 rounded-2xl backdrop-blur-md hover:border-indigo-500/50 transition-colors">
+                <Code2 className="w-8 h-8 text-indigo-400 mb-4" />
+                <h4 className="text-white font-bold text-xl mb-2">15+ Years</h4>
+                <p className="text-slate-400 text-sm">Of deep full-stack software development experience.</p>
+              </div>
+              <div className="bg-slate-900/50 border border-slate-700 p-6 rounded-2xl backdrop-blur-md hover:border-emerald-500/50 transition-colors">
+                <ShieldCheck className="w-8 h-8 text-emerald-400 mb-4" />
+                <h4 className="text-white font-bold text-xl mb-2">Enterprise Scale</h4>
+                <p className="text-slate-400 text-sm">Deployed systems for massive international listed companies.</p>
+              </div>
+              <div className="bg-slate-900/50 border border-slate-700 p-6 rounded-2xl backdrop-blur-md hover:border-cyan-500/50 transition-colors">
+                <LineChart className="w-8 h-8 text-cyan-400 mb-4" />
+                <h4 className="text-white font-bold text-xl mb-2">Live Dashboards</h4>
+                <p className="text-slate-400 text-sm">Turning completely offline data into automated visual reporting.</p>
+              </div>
+              <div className="bg-slate-900/50 border border-slate-700 p-6 rounded-2xl backdrop-blur-md hover:border-indigo-500/50 transition-colors">
+                <Cpu className="w-8 h-8 text-indigo-400 mb-4" />
+                <h4 className="text-white font-bold text-xl mb-2">AI Leverage</h4>
+                <p className="text-slate-400 text-sm">Supporting existing teams and freeing up capacity for innovation.</p>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
