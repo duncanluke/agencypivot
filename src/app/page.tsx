@@ -32,7 +32,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#audit" className="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-[0_0_30px_rgba(79,70,229,0.3)] hover:shadow-[0_0_40px_rgba(79,70,229,0.5)] flex items-center justify-center">
-              Request Your Free Audit
+              Request Your Free AI Match
             </a>
             <a href="#services" className="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center">
               Explore Solutions
@@ -81,7 +81,7 @@ export default function Home() {
           <div className="text-center mb-16 max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">Our Process.</h2>
             <p className="text-slate-400 text-lg md:text-xl leading-relaxed">
-              We focus on building a relationship first. We start with a conversation, identify absolute clarity on the opportunity, and then deliver your free, detailed audit report to keep.
+              We focus on building a relationship first. We start with a conversation, identify absolute clarity on the opportunity, and then deliver your free, detailed AI Match Assessment to keep.
             </p>
           </div>
 
@@ -100,7 +100,7 @@ export default function Home() {
                 />
                 <ProcessStepItem
                   number="03"
-                  title="Opportunity Audit Report"
+                  title="AI Match Assessment"
                   description="We analyze the conversation and generate a detailed report identifying where AI agents and Dashboards can modernize your stack."
                 />
                 <ProcessStepItem
