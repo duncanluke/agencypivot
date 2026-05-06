@@ -46,7 +46,7 @@ export default function LeadCapture() {
           <h3 className="text-3xl md:text-4xl font-black text-white mb-4 leading-tight">
             Ready to stop experimenting and start <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">scaling</span>?
           </h3>
-            Enter your email below. We'll do a quick discovery call to understand your processes, and then generate a customized AI Match Assessment showing where AI and automation can modernize your specific business. You keep the report.
+
           
           <div className="flex flex-wrap gap-3">
             <div className="flex items-center gap-2 text-sm text-slate-300">
