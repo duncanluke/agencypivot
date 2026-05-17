@@ -76,7 +76,7 @@ export default function Pricing() {
           <PricingCard
             title="Digital Employee"
             price="R50,000"
-            subtitle="+ R4,500/mo + Cloud Fees"
+            subtitle="+ Cloud Fees"
             description="Deploy your first autonomous agent to handle a core workflow from start to finish."
             features={[
               "AI Environment Setup",
