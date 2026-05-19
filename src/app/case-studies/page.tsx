@@ -318,10 +318,8 @@ export default function CaseStudiesPage() {
             <div className="w-full lg:w-1/2 order-1 lg:order-2 flex flex-col items-center relative min-h-[400px] sm:min-h-[500px] justify-center rounded-3xl overflow-hidden border border-slate-800 shadow-2xl bg-gradient-to-br from-[#0a0f1c] to-[#03050a] p-8">
                {/* Diagram Container */}
                <div className="w-full h-full flex flex-col items-center justify-between relative min-h-[350px]">
-                  {/* Connecting Lines */}
-                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[2px] h-[70%] bg-gradient-to-b from-blue-500/50 via-indigo-500/50 to-cyan-500/50" />
-                  <div className="absolute top-[20%] left-[25%] w-[50%] h-[2px] bg-gradient-to-r from-orange-500/50 to-blue-400/50" />
-
+                  {/* Connecting Line - Simplified Single Spine */}
+                  <div className="absolute top-[10%] bottom-[10%] left-1/2 -translate-x-1/2 w-[2px] bg-gradient-to-b from-slate-700/50 via-indigo-500/50 to-cyan-500/50" />
                   {/* Cloud Providers (Top Row) */}
                   <div className="flex w-full justify-around items-center z-10 mt-4">
                      {/* AWS */}
