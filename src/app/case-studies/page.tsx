@@ -50,6 +50,9 @@ export default function CaseStudiesPage() {
                 <div className="flex items-center justify-center">
                   <img src="/logos/assupol.png" alt="Assupol Life Logo" className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
                 </div>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/avo.png" alt="Avocado Vision Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
                 
                 {/* Group 2 (Repeated for extra width) */}
                 <div className="flex items-center justify-center">
@@ -66,6 +69,9 @@ export default function CaseStudiesPage() {
                 </div>
                 <div className="flex items-center justify-center">
                   <img src="/logos/assupol.png" alt="Assupol Life Logo" className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/avo.png" alt="Avocado Vision Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
                 </div>
               </div>
             ))}
