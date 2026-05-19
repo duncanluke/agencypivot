@@ -47,7 +47,10 @@ export async function POST(req: Request) {
                         <p>Looking forward to speaking with you,<br/><strong>The Social Collective Team</strong></p>
                     </div>
                 `,
-                text: "Thank you for reaching out. Download our Company Profile here: https://ai.collective.social/TSC-Company-Profile.pdf"
+                text: "Thank you for reaching out. Download our Company Profile here: https://ai.collective.social/TSC-Company-Profile.pdf",
+                settings: {
+                    track_clicks: false
+                }
             };
 
             const mailerRes = await fetch("https://api.mailersend.com/v1/email", {

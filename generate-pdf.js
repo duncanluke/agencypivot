@@ -23,6 +23,7 @@ const puppeteer = require('puppeteer');
       path: '/Users/duncanluke/Developer/agent/agencypivot/public/TSC-Company-Profile.pdf',
       format: 'A4',
       printBackground: true,
+      scale: 0.65,
       margin: {
         top: '20px',
         bottom: '20px',
