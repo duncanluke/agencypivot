@@ -42,12 +42,12 @@ export async function POST(req: Request) {
                         <p>Thank you for reaching out. We have successfully received your information.</p>
                         <p>As requested, you can access and download our full company profile using the link below to learn more about our impact validation technology, past case studies, and modern AI solutions.</p>
                         <p style="margin: 24px 0;">
-                            <a href="https://ai.collective.social/company-profile" style="background-color: #4f46e5; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold;">📄 View Our Company Profile</a>
+                            <a href="https://ai.collective.social/TSC-Company-Profile.pdf" target="_blank" style="background-color: #4f46e5; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold;">📄 Download Company Profile</a>
                         </p>
                         <p>Looking forward to speaking with you,<br/><strong>The Social Collective Team</strong></p>
                     </div>
                 `,
-                text: "Thank you for reaching out. View our Company Profile here: https://ai.collective.social/company-profile"
+                text: "Thank you for reaching out. Download our Company Profile here: https://ai.collective.social/TSC-Company-Profile.pdf"
             };
 
             const mailerRes = await fetch("https://api.mailersend.com/v1/email", {
