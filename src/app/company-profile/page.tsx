@@ -20,36 +20,43 @@ export default function CompanyProfile() {
         <section className="flex flex-col lg:flex-row gap-12 items-center bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 rounded-3xl p-8 lg:p-16 shadow-2xl relative overflow-hidden print:bg-none print:border-none print:shadow-none print:p-0">
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-indigo-600/10 rounded-full blur-[120px] -z-10 pointer-events-none print:hidden"></div>
           
-          <div className="flex-1 space-y-6 z-10">
-            <h1 className="text-4xl lg:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400 print:text-black">The Founder / CEO</h1>
-            <div className="space-y-1">
-              <h2 className="text-2xl font-bold text-white print:text-black">Duncan Luke</h2>
-              <p className="text-lg text-indigo-400 print:text-slate-600">Founder, Social Collective</p>
-            </div>
+          <div className="w-full lg:w-1/3 flex flex-col items-center justify-center gap-6 z-10 print:hidden">
+             <div className="w-full aspect-[3/4] rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center overflow-hidden shadow-[0_0_50px_rgba(79,70,229,0.15)] relative">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10 flex items-end p-6">
+                   <span className="font-bold text-white text-xl">Duncan Luke</span>
+                </div>
+                <img src="/images/profile/founder.png" alt="Duncan Luke" className="w-full h-full object-cover object-top" />
+             </div>
+          </div>
+
+          <div className="w-full lg:w-2/3 space-y-6 z-10">
+            <h1 className="text-4xl lg:text-6xl font-black tracking-tight text-white print:text-black">
+              The Founder / CEO
+            </h1>
             
-            <div className="grid grid-cols-1 sm:grid-cols-[200px_1fr] gap-y-4 gap-x-4 py-6 border-y border-slate-800 print:border-slate-300">
-              <div className="text-slate-400 flex items-center gap-2"><Award className="w-5 h-5 text-indigo-400" /> Davos Award Recipient:</div>
-              <div className="font-medium">World Economic Forum, Global Shaper</div>
-              
-              <div className="text-slate-400 flex items-center gap-2"><Target className="w-5 h-5 text-indigo-400" /> Mission:</div>
-              <div className="font-medium">Impact Reporting (ESG, Social Return, Sustainability)</div>
-              
-              <div className="text-slate-400 flex items-center gap-2"><Activity className="w-5 h-5 text-indigo-400" /> The difference:</div>
-              <div className="font-medium">Data Mapping, Analysis and Management</div>
+            <div className="space-y-2">
+              <h2 className="text-2xl font-bold text-indigo-400">Duncan Luke</h2>
+              <p className="text-xl text-slate-400 print:text-slate-600">Founder, Social Collective</p>
+            </div>
+
+            <div className="grid gap-4 py-6 border-y border-slate-800/50 print:border-slate-300">
+              <div className="flex items-center gap-4">
+                <Award className="w-6 h-6 text-indigo-500 shrink-0" />
+                <span className="text-slate-300 print:text-slate-700"><strong className="text-white print:text-black">Davos Award Recipient:</strong> World Economic Forum, Global Shaper</span>
+              </div>
+              <div className="flex items-center gap-4">
+                <Target className="w-6 h-6 text-indigo-500 shrink-0" />
+                <span className="text-slate-300 print:text-slate-700"><strong className="text-white print:text-black">Mission:</strong> Impact Reporting (ESG, Social Return, Sustainability)</span>
+              </div>
+              <div className="flex items-center gap-4">
+                <Activity className="w-6 h-6 text-indigo-500 shrink-0" />
+                <span className="text-slate-300 print:text-slate-700"><strong className="text-white print:text-black">The difference:</strong> Data Mapping, Analysis and Management</span>
+              </div>
             </div>
 
             <p className="text-slate-400 leading-relaxed text-lg print:text-slate-700">
               The Social Collective was recognised as the winner of the <strong className="text-white print:text-black">Coca-Cola Shaping a Better Future Challenge 2014</strong>, which was awarded at Davos through the <strong className="text-white print:text-black">World Economic Forum</strong>. The company was chosen for its innovative use of technology to enhance the employability of individuals while also tracking social impact. Since then, the team has expanded to meet the demands of impact reporting for implementation partners and communities. The company has now become a crucial technology for <strong className="text-white print:text-black">validating impact data</strong>.
             </p>
-          </div>
-          
-          <div className="w-full lg:w-1/3 flex flex-col items-center justify-center gap-6 z-10 print:hidden">
-             <div className="w-full aspect-square rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center overflow-hidden shadow-[0_0_50px_rgba(79,70,229,0.15)] relative">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10 flex items-end p-6">
-                   <span className="font-bold text-white text-xl">Duncan Luke</span>
-                </div>
-                <img src="/images/profile/1.jpg" alt="Duncan Luke" className="w-full h-full object-cover object-top" />
-             </div>
           </div>
         </section>
 
