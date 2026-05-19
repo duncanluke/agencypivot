@@ -261,6 +261,13 @@ export default function CompanyProfile() {
             B-BBEE: Level 2
         </div>
 
+        {/* Contact Info (Visible on Web and Print) */}
+        <div className="pt-8 text-center border-t border-slate-800/50 print:border-slate-300">
+          <p className="text-slate-400 text-lg print:text-black font-medium">
+            Get in touch: <a href="mailto:team@collective.social" className="text-indigo-400 hover:text-indigo-300 print:text-indigo-600 transition-colors">team@collective.social</a>
+          </p>
+        </div>
+
       </div>
     </main>
   );
