@@ -35,67 +35,37 @@ export default function CaseStudiesPage() {
             {[...Array(2)].map((_, i) => (
               <div key={i} className="flex items-center gap-16 md:gap-24 px-8 md:px-12 min-w-max">
                 {/* Group 1 */}
-                <div className="flex items-center gap-4">
-                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
-                    <img src="/logos/wits.png" alt="Wits University Logo" className="w-full h-full object-contain" />
-                  </div>
-                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Wits University</span>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/wits.png" alt="Wits University Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
-                    <img src="/logos/absa.png" alt="Absa Bank Logo" className="w-full h-full object-contain" />
-                  </div>
-                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Absa Bank</span>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/absa.png" alt="Absa Bank Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
-                    <img src="/logos/sab.png" alt="SAB Foundation Logo" className="w-full h-full object-contain" />
-                  </div>
-                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">SAB Foundation</span>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/sab.png" alt="SAB Foundation Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
-                    <img src="/logos/kfc.png" alt="KFC Logo" className="w-full h-full object-contain" />
-                  </div>
-                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">KFC</span>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/kfc.png" alt="KFC Logo" className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
-                    <img src="/logos/assupol.png" alt="Assupol Life Logo" className="w-full h-full object-contain" />
-                  </div>
-                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Assupol Life</span>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/assupol.png" alt="Assupol Life Logo" className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 
                 {/* Group 2 (Repeated for extra width) */}
-                <div className="flex items-center gap-4">
-                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
-                    <img src="/logos/wits.png" alt="Wits University Logo" className="w-full h-full object-contain" />
-                  </div>
-                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Wits University</span>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/wits.png" alt="Wits University Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
-                    <img src="/logos/absa.png" alt="Absa Bank Logo" className="w-full h-full object-contain" />
-                  </div>
-                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Absa Bank</span>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/absa.png" alt="Absa Bank Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
-                    <img src="/logos/sab.png" alt="SAB Foundation Logo" className="w-full h-full object-contain" />
-                  </div>
-                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">SAB Foundation</span>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/sab.png" alt="SAB Foundation Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
-                    <img src="/logos/kfc.png" alt="KFC Logo" className="w-full h-full object-contain" />
-                  </div>
-                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">KFC</span>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/kfc.png" alt="KFC Logo" className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
-                    <img src="/logos/assupol.png" alt="Assupol Life Logo" className="w-full h-full object-contain" />
-                  </div>
-                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Assupol Life</span>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/assupol.png" alt="Assupol Life Logo" className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
                 </div>
               </div>
             ))}
