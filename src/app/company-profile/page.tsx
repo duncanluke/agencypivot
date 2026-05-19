@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '@/components/Navbar';
+import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Award, Briefcase, FileText, Target, Activity, ShieldCheck, CheckCircle2, FileSpreadsheet, Lock } from 'lucide-react';
 
@@ -13,7 +13,7 @@ export default function CompanyProfile() {
     <main className="min-h-screen bg-[#03050a] text-white selection:bg-indigo-500/30 font-sans print:bg-white print:text-black">
       {/* Hide navbar on print */}
       <div className="print:hidden">
-        <Navbar />
+        <Navigation />
       </div>
 
       <div className="pt-32 pb-16 px-6 lg:px-12 max-w-7xl mx-auto space-y-32 print:pt-8 print:space-y-12 print:px-0">
