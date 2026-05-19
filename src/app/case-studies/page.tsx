@@ -36,52 +36,52 @@ export default function CaseStudiesPage() {
               <div key={i} className="flex items-center gap-16 md:gap-24 px-8 md:px-12 min-w-max">
                 {/* Group 1 */}
                 <div className="flex items-center gap-4">
-                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
-                    <GraduationCap className="w-6 h-6 md:w-8 md:h-8 text-indigo-400" />
+                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Wits_University_logo.svg/512px-Wits_University_logo.svg.png" alt="Wits University Logo" className="w-full h-full object-contain" />
                   </div>
                   <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Wits University</span>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
-                    <Landmark className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
+                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/ABSA_Group_Limited_Logo.svg/512px-ABSA_Group_Limited_Logo.svg.png" alt="Absa Bank Logo" className="w-full h-full object-contain" />
                   </div>
                   <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Absa Bank</span>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
-                    <HeartHandshake className="w-6 h-6 md:w-8 md:h-8 text-rose-400" />
+                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/23/South_African_Breweries_logo.svg/512px-South_African_Breweries_logo.svg.png" alt="SAB Foundation Logo" className="w-full h-full object-contain" />
                   </div>
                   <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">SAB Foundation</span>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
-                    <Shield className="w-6 h-6 md:w-8 md:h-8 text-emerald-400" />
+                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
+                    <img src="https://assupol.co.za/wp-content/uploads/2021/08/Assupol-Logo-1.png" alt="Assupol Life Logo" className="w-full h-full object-contain" />
                   </div>
                   <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Assupol Life</span>
                 </div>
                 
                 {/* Group 2 (Repeated for extra width) */}
                 <div className="flex items-center gap-4">
-                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
-                    <GraduationCap className="w-6 h-6 md:w-8 md:h-8 text-indigo-400" />
+                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Wits_University_logo.svg/512px-Wits_University_logo.svg.png" alt="Wits University Logo" className="w-full h-full object-contain" />
                   </div>
                   <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Wits University</span>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
-                    <Landmark className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
+                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/ABSA_Group_Limited_Logo.svg/512px-ABSA_Group_Limited_Logo.svg.png" alt="Absa Bank Logo" className="w-full h-full object-contain" />
                   </div>
                   <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Absa Bank</span>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
-                    <HeartHandshake className="w-6 h-6 md:w-8 md:h-8 text-rose-400" />
+                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/23/South_African_Breweries_logo.svg/512px-South_African_Breweries_logo.svg.png" alt="SAB Foundation Logo" className="w-full h-full object-contain" />
                   </div>
                   <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">SAB Foundation</span>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
-                    <Shield className="w-6 h-6 md:w-8 md:h-8 text-emerald-400" />
+                  <div className="bg-white/90 p-2 md:p-3 rounded-xl flex items-center justify-center shadow-lg w-16 md:w-20 h-16 md:h-20">
+                    <img src="https://assupol.co.za/wp-content/uploads/2021/08/Assupol-Logo-1.png" alt="Assupol Life Logo" className="w-full h-full object-contain" />
                   </div>
                   <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Assupol Life</span>
                 </div>
