@@ -16,6 +16,7 @@ export default function Navigation() {
                 </Link>
                 <div className="hidden md:flex gap-8 text-sm font-medium text-slate-300">
                     <Link href="/#services" className={`hover:text-indigo-400 transition-colors ${pathname === '/services' ? 'text-indigo-400' : ''}`}>Solutions</Link>
+                    <Link href="/case-studies" className={`hover:text-indigo-400 transition-colors ${pathname === '/case-studies' ? 'text-indigo-400' : ''}`}>Case Studies</Link>
                     <Link href="/process" className={`hover:text-indigo-400 transition-colors ${pathname === '/process' ? 'text-indigo-400' : ''}`}>Process</Link>
                     <Link href="/pricing" className={`hover:text-indigo-400 transition-colors ${pathname === '/pricing' ? 'text-indigo-400' : ''}`}>Pricing</Link>
                 </div>
