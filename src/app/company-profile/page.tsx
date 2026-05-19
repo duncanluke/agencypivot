@@ -51,16 +51,13 @@ export default function CompanyProfile() {
 
           <div className="w-full lg:w-2/3 space-y-6 z-10">
             <h1 className="text-4xl lg:text-6xl font-black tracking-tight text-white">
-              The Founder / CEO
+              Social Collective
             </h1>
 
             <div className="space-y-2">
-              <h2 className="text-2xl font-bold text-indigo-400">
-                Duncan Luke
+              <h2 className="text-xl font-bold text-indigo-400">
+                Duncan Luke, Founder / CEO
               </h2>
-              <p className="text-xl text-slate-400">
-                Founder, Social Collective
-              </p>
             </div>
 
             <div className="grid gap-4 py-6 border-y border-slate-800/50">
@@ -113,7 +110,7 @@ export default function CompanyProfile() {
         </section>
 
         {/* Timeline Section */}
-        <section className="space-y-12">
+        <section className="space-y-12 print:break-before-page">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-black text-white">
               Our Journey
@@ -223,7 +220,7 @@ export default function CompanyProfile() {
         </section>
 
         {/* Features Grid */}
-        <section className="space-y-12">
+        <section className="space-y-12 print:break-before-page">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-black text-white">
               Core Capabilities
@@ -321,7 +318,7 @@ export default function CompanyProfile() {
         </section>
 
         {/* Client Testimonials */}
-        <section className="space-y-12 pb-12 print:page-break-before">
+        <section className="space-y-12 pb-12">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-black text-white">
               Client Testimonials
@@ -398,7 +395,7 @@ export default function CompanyProfile() {
         </section>
 
         {/* Footer info for print only */}
-        <div className="hidden print:block text-center text-xs text-slate-500 pt-12 border-t border-slate-300 mt-12">
+        <div className="hidden print:block text-center text-xs text-slate-400 pt-12 border-t border-slate-800 mt-12">
           <strong>The Social Collective Pty Ltd.</strong>
           <br />
           Reg No. 2015 / 160496 / 07 | ATT: The Social Collective | 35 Carstens
