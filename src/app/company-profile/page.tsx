@@ -19,6 +19,11 @@ export default function CompanyProfile() {
       <div className="pt-32 pb-16 px-6 lg:px-12 max-w-7xl mx-auto space-y-32 print:pt-8 print:space-y-12 print:px-0">
         
         {/* Header / Founder Section */}
+        <div className="flex justify-end print:hidden mb-4">
+            <a href="/TSC-Company-Profile.pdf" download className="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-2 rounded-full font-bold shadow-lg shadow-indigo-500/20 transition-all flex items-center gap-2">
+                <FileText className="w-4 h-4" /> Download as PDF
+            </a>
+        </div>
         <section className="flex flex-col lg:flex-row gap-12 items-center bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 rounded-3xl p-8 lg:p-16 shadow-2xl relative overflow-hidden print:bg-none print:border-none print:shadow-none print:p-0">
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-indigo-600/10 rounded-full blur-[120px] -z-10 pointer-events-none print:hidden"></div>
           
@@ -69,7 +74,7 @@ export default function CompanyProfile() {
            <div className="relative py-12">
               <div className="absolute top-1/2 left-0 w-full h-2 bg-slate-800 -translate-y-1/2 rounded-full print:bg-slate-300"></div>
               
-              <div className="grid grid-cols-2 md:grid-cols-5 gap-8 relative z-10">
+              <div className="grid grid-cols-2 md:grid-cols-6 gap-8 relative z-10">
                  {/* 2013 */}
                  <div className="flex flex-col items-center text-center gap-4 relative group">
                     <div className="w-12 h-12 rounded-full bg-slate-900 border-4 border-indigo-500 flex items-center justify-center text-white font-bold shadow-[0_0_20px_rgba(79,70,229,0.4)] group-hover:scale-110 transition-transform print:bg-white print:text-black print:border-slate-400 print:shadow-none">
@@ -122,6 +127,17 @@ export default function CompanyProfile() {
                     <div className="bg-slate-900/80 p-4 border border-slate-800 rounded-xl min-h-[120px] print:border-none print:bg-transparent print:p-0">
                        <h3 className="text-green-400 font-bold mb-2">AI Impact</h3>
                        <p className="text-sm text-slate-400 print:text-slate-600">AI powered indicators, data insights and Agents</p>
+                    </div>
+                 </div>
+
+                 {/* 2026 */}
+                 <div className="flex flex-col items-center text-center gap-4 relative group md:-mt-12">
+                    <div className="w-12 h-12 rounded-full bg-slate-900 border-4 border-fuchsia-500 flex items-center justify-center text-white font-bold shadow-[0_0_20px_rgba(217,70,239,0.4)] group-hover:scale-110 transition-transform print:bg-white print:text-black print:border-slate-400 print:shadow-none">
+                       '26
+                    </div>
+                    <div className="bg-slate-900/80 p-4 border border-slate-800 rounded-xl min-h-[120px] print:border-none print:bg-transparent print:p-0">
+                       <h3 className="text-fuchsia-400 font-bold mb-2">AI Transition</h3>
+                       <p className="text-sm text-slate-400 print:text-slate-600">Transition to AI to solve business objectives. (see case studies).</p>
                     </div>
                  </div>
               </div>

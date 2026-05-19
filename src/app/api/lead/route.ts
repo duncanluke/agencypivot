@@ -41,7 +41,7 @@ export async function POST(req: Request) {
                         <p>Thank you for reaching out. The next step is a brief, zero-pressure discovery call where we can unpack your operational bottlenecks and understand how your business works.</p>
                         <p>After the call, we will generate a customized <strong>AI Match Assessment</strong> for you to keep. This report clearly identifies where AI agents and Live Dashboards can modernize your stack.</p>
                         <p style="margin: 24px 0;">
-                            <a href="https://ai.collective.social/TSC-Company-Profile.pdf" style="background-color: #f8fafc; color: #0f172a; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; border: 1px solid #cbd5e1;">📄 View Our Company Profile</a>
+                            <a href="https://ai.collective.social/company-profile" style="background-color: #f8fafc; color: #0f172a; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; border: 1px solid #cbd5e1;">📄 View Our Company Profile</a>
                         </p>
                         <p>To get started, please grab a time directly on our calendar here:</p>
                         <p style="margin: 24px 0;">
@@ -50,7 +50,7 @@ export async function POST(req: Request) {
                         <p>Looking forward to speaking with you,<br/><strong>The Social Collective Team</strong></p>
                     </div>
                 `,
-                text: "Thank you for reaching out. View our Company Profile here: https://ai.collective.social/TSC-Company-Profile.pdf \n\nPlease book a brief discovery call with us so we can begin unpacking your processes and generating your free AI Match Assessment: https://calendly.com/"
+                text: "Thank you for reaching out. View our Company Profile here: https://ai.collective.social/company-profile \n\nPlease book a brief discovery call with us so we can begin unpacking your processes and generating your free AI Match Assessment: https://calendly.com/"
             };
 
             const mailerRes = await fetch("https://api.mailersend.com/v1/email", {
