@@ -41,7 +41,7 @@ export default function LeadCapture() {
       <div className="relative z-10 flex flex-col md:flex-row gap-10 items-center">
         <div className="flex-1 text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-xs font-bold uppercase tracking-wider mb-6">
-            Free AI Match Assessment
+            Request Company Profile
           </div>
           <h3 className="text-3xl md:text-4xl font-black text-white mb-4 leading-tight">
             Ready to stop experimenting and start <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">scaling</span>?
@@ -59,7 +59,7 @@ export default function LeadCapture() {
             </div>
             <div className="flex items-center gap-2 text-sm text-slate-300">
               <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>Custom AI Match</span>
+              <span>Direct Inbox Delivery</span>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@ export default function LeadCapture() {
                   <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
                 ) : (
                   <>
-                    Request AI Match <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    Get Company Profile <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                   </>
                 )}
               </button>

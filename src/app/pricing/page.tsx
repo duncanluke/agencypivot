@@ -125,7 +125,7 @@ export default function Pricing() {
               <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 blur-[80px] pointer-events-none" />
               
               <div className="relative z-10 text-center mb-8">
-                <h3 className="text-3xl font-black text-white mb-4">Let's get started</h3>
+                <h3 className="text-3xl font-black text-white mb-4">Request More Information</h3>
                 <p className="text-slate-400">
                   {selectedTier 
                     ? `You've selected the ${selectedTier} plan. Enter your work email and we'll reach out to schedule our first call.` 
@@ -236,7 +236,7 @@ function PricingCard({
           }
         `}
       >
-        {selected ? "Selected" : "Get Started"} <ArrowRight className="w-4 h-4" />
+        {selected ? "Selected" : "Request More Information"} <ArrowRight className="w-4 h-4" />
       </button>
     </motion.div>
   );

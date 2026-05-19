@@ -54,9 +54,13 @@ export default function CompanyProfile() {
               </div>
             </div>
 
-            <p className="text-slate-400 leading-relaxed text-lg print:text-slate-700">
+            <p className="text-slate-400 leading-relaxed text-lg print:text-slate-700 mb-8">
               The Social Collective was recognised as the winner of the <strong className="text-white print:text-black">Coca-Cola Shaping a Better Future Challenge 2014</strong>, which was awarded at Davos through the <strong className="text-white print:text-black">World Economic Forum</strong>. The company was chosen for its innovative use of technology to enhance the employability of individuals while also tracking social impact. Since then, the team has expanded to meet the demands of impact reporting for implementation partners and communities. The company has now become a crucial technology for <strong className="text-white print:text-black">validating impact data</strong>.
             </p>
+
+            <div className="w-full rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl print:hidden">
+              <img src="/images/profile/davos.png" alt="Davos Award Ceremony" className="w-full h-auto object-cover" />
+            </div>
           </div>
         </section>
 
