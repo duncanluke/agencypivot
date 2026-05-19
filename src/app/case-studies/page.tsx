@@ -1,7 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import { ArrowRight, CheckCircle2, User, Bot, Cloud } from "lucide-react";
+import { ArrowRight, CheckCircle2, User, Bot, Cloud, GraduationCap, Landmark, HeartHandshake, Shield } from "lucide-react";
 
 export default function CaseStudiesPage() {
   return (
@@ -20,14 +20,73 @@ export default function CaseStudiesPage() {
       </section>
 
       {/* Logo Band */}
-      <section className="border-y border-slate-800/50 bg-[#05080f]/50 py-10 relative z-10">
-        <div className="max-w-7xl mx-auto px-6">
-          <p className="text-center text-sm font-bold tracking-widest text-slate-500 uppercase mb-8">Trusted by industry leaders</p>
-          <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-            <span className="text-xl font-bold text-white tracking-tight">Wits University</span>
-            <span className="text-xl font-bold text-white tracking-tight">Absa Bank</span>
-            <span className="text-xl font-bold text-white tracking-tight">SAB Foundation</span>
-            <span className="text-xl font-bold text-white tracking-tight">Assupol Life</span>
+      <section className="border-y border-slate-800/50 bg-[#05080f]/50 py-10 relative z-10 overflow-hidden w-full">
+        <div className="max-w-7xl mx-auto px-6 mb-8">
+          <p className="text-center text-sm font-bold tracking-widest text-slate-500 uppercase">Trusted by industry leaders</p>
+        </div>
+        
+        <div className="relative w-full flex">
+          {/* Fading Edges */}
+          <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-[#05080f] to-transparent z-20 pointer-events-none" />
+          <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-[#05080f] to-transparent z-20 pointer-events-none" />
+
+          {/* Marquee Track */}
+          <div className="flex w-max animate-marquee hover:[animation-play-state:paused] opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+            {[...Array(2)].map((_, i) => (
+              <div key={i} className="flex items-center gap-16 md:gap-24 px-8 md:px-12 min-w-max">
+                {/* Group 1 */}
+                <div className="flex items-center gap-4">
+                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
+                    <GraduationCap className="w-6 h-6 md:w-8 md:h-8 text-indigo-400" />
+                  </div>
+                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Wits University</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
+                    <Landmark className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
+                  </div>
+                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Absa Bank</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
+                    <HeartHandshake className="w-6 h-6 md:w-8 md:h-8 text-rose-400" />
+                  </div>
+                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">SAB Foundation</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
+                    <Shield className="w-6 h-6 md:w-8 md:h-8 text-emerald-400" />
+                  </div>
+                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Assupol Life</span>
+                </div>
+                
+                {/* Group 2 (Repeated for extra width) */}
+                <div className="flex items-center gap-4">
+                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
+                    <GraduationCap className="w-6 h-6 md:w-8 md:h-8 text-indigo-400" />
+                  </div>
+                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Wits University</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
+                    <Landmark className="w-6 h-6 md:w-8 md:h-8 text-blue-400" />
+                  </div>
+                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Absa Bank</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
+                    <HeartHandshake className="w-6 h-6 md:w-8 md:h-8 text-rose-400" />
+                  </div>
+                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">SAB Foundation</span>
+                </div>
+                <div className="flex items-center gap-4">
+                  <div className="bg-slate-800/80 border border-slate-700 p-2 md:p-2.5 rounded-xl flex items-center justify-center shadow-lg">
+                    <Shield className="w-6 h-6 md:w-8 md:h-8 text-emerald-400" />
+                  </div>
+                  <span className="text-xl font-bold text-white tracking-tight whitespace-nowrap">Assupol Life</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
