@@ -6,10 +6,17 @@ const puppeteer = require('puppeteer');
     const browser = await puppeteer.launch({ headless: "new" });
     const page = await browser.newPage();
     
+    // Log console messages from the browser
+    page.on('console', msg => console.log('PAGE LOG:', msg.text()));
+    
     await page.emulateMediaType('print');
     
     console.log("Navigating to local page...");
-    await page.goto('http://localhost:3000/company-profile', { waitUntil: 'networkidle0' });
+    const response = await page.goto('http://localhost:3000/company-profile', { waitUntil: 'networkidle0' });
+    console.log(`HTTP Status: ${response.status()}`);
+    
+    console.log("Waiting 3 seconds for rendering...");
+    await new Promise(r => setTimeout(r, 3000));
     
     console.log("Generating PDF...");
     await page.pdf({

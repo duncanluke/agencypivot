@@ -8,7 +8,7 @@ export default function Navigation() {
     const pathname = usePathname();
 
     return (
-        <nav className="fixed w-full z-50 top-0 border-b border-indigo-900/30 bg-[#05080f]/80 backdrop-blur-md">
+        <nav className="fixed w-full z-50 top-0 border-b border-indigo-900/30 bg-[#05080f]/80 backdrop-blur-md print:hidden">
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 <Link href="/" className="text-xl font-black tracking-tighter flex items-center gap-2">
                     <Bot className="w-8 h-8 text-indigo-500" />

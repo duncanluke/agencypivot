@@ -1,6 +1,4 @@
 import React from 'react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
 import { Award, Briefcase, FileText, Target, Activity, ShieldCheck, CheckCircle2, FileSpreadsheet, Lock } from 'lucide-react';
 
 export const metadata = {
@@ -11,11 +9,6 @@ export const metadata = {
 export default function CompanyProfile() {
   return (
     <main className="min-h-screen bg-[#03050a] text-white selection:bg-indigo-500/30 font-sans print:bg-white print:text-black">
-      {/* Hide navbar on print */}
-      <div className="print:hidden">
-        <Navigation />
-      </div>
-
       <div className="pt-32 pb-16 px-6 lg:px-12 max-w-7xl mx-auto space-y-32 print:pt-8 print:space-y-12 print:px-0">
         
         {/* Header / Founder Section */}
@@ -46,19 +39,16 @@ export default function CompanyProfile() {
             </div>
 
             <p className="text-slate-400 leading-relaxed text-lg print:text-slate-700">
-              The Social Collective was recognised as the winner of the Coca-Cola Shaping a Better Future Challenge 2014 at the <strong className="text-white print:text-black">World Economic Forum in Davos</strong>. The company was chosen for its innovative use of technology to enhance the employability of individuals while also tracking social impact. Since then, the team has expanded to meet the demands of impact reporting for implementation partners and communities. The company has now become a crucial technology for <strong className="text-white print:text-black">validating impact data</strong>.
+              The Social Collective was recognised as the winner of the <strong className="text-white print:text-black">Coca-Cola Shaping a Better Future Challenge 2014</strong>, which was awarded at Davos through the <strong className="text-white print:text-black">World Economic Forum</strong>. The company was chosen for its innovative use of technology to enhance the employability of individuals while also tracking social impact. Since then, the team has expanded to meet the demands of impact reporting for implementation partners and communities. The company has now become a crucial technology for <strong className="text-white print:text-black">validating impact data</strong>.
             </p>
           </div>
           
           <div className="w-full lg:w-1/3 flex flex-col items-center justify-center gap-6 z-10 print:hidden">
-             {/* Placeholder for Founder Image - Add real image in public/images/founder.png */}
              <div className="w-full aspect-square rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center overflow-hidden shadow-[0_0_50px_rgba(79,70,229,0.15)] relative">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10 flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10 flex items-end p-6">
                    <span className="font-bold text-white text-xl">Duncan Luke</span>
                 </div>
-                <div className="w-full h-full bg-slate-900 flex items-center justify-center">
-                   <span className="text-slate-600 text-sm">Image Placement</span>
-                </div>
+                <img src="/images/profile/1.jpg" alt="Duncan Luke" className="w-full h-full object-cover object-top" />
              </div>
           </div>
         </section>
@@ -264,10 +254,6 @@ export default function CompanyProfile() {
             B-BBEE: Level 2
         </div>
 
-      </div>
-
-      <div className="print:hidden">
-        <Footer />
       </div>
     </main>
   );

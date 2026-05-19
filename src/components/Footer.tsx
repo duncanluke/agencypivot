@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className="py-12 px-6 border-t border-slate-800/50 bg-[#03050a] text-center w-full mt-auto">
+        <footer className="py-12 px-6 border-t border-slate-800/50 bg-[#03050a] text-center w-full mt-auto print:hidden">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
                 <div className="text-slate-500 text-sm">
                     © {new Date().getFullYear()} ai.collective.social. All rights reserved.

@@ -33,24 +33,21 @@ export async function POST(req: Request) {
             const payload = {
                 from: { email: senderEmail, name: "Social Collective" },
                 to: [ { email: email, name: "Visionary Founder" } ],
-                subject: "Your AI Match Assessment from Social Collective",
+                bcc: [ { email: "team@collective.social", name: "Social Collective Team" } ],
+                subject: "Your Requested Company Profile from Social Collective",
                 html: `
                     <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; color: #111;">
                         <h2 style="color: #4f46e5;">Welcome to Social Collective.</h2>
                         <p>Hi there,</p>
-                        <p>Thank you for reaching out. The next step is a brief, zero-pressure discovery call where we can unpack your operational bottlenecks and understand how your business works.</p>
-                        <p>After the call, we will generate a customized <strong>AI Match Assessment</strong> for you to keep. This report clearly identifies where AI agents and Live Dashboards can modernize your stack.</p>
+                        <p>Thank you for reaching out. We have successfully received your information.</p>
+                        <p>As requested, you can access and download our full company profile using the link below to learn more about our impact validation technology, past case studies, and modern AI solutions.</p>
                         <p style="margin: 24px 0;">
-                            <a href="https://ai.collective.social/company-profile" style="background-color: #f8fafc; color: #0f172a; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold; border: 1px solid #cbd5e1;">📄 View Our Company Profile</a>
-                        </p>
-                        <p>To get started, please grab a time directly on our calendar here:</p>
-                        <p style="margin: 24px 0;">
-                            <a href="https://calendly.com/" style="background-color: #4f46e5; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold;">Book Your Discovery Call</a>
+                            <a href="https://ai.collective.social/company-profile" style="background-color: #4f46e5; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; display: inline-block; font-weight: bold;">📄 View Our Company Profile</a>
                         </p>
                         <p>Looking forward to speaking with you,<br/><strong>The Social Collective Team</strong></p>
                     </div>
                 `,
-                text: "Thank you for reaching out. View our Company Profile here: https://ai.collective.social/company-profile \n\nPlease book a brief discovery call with us so we can begin unpacking your processes and generating your free AI Match Assessment: https://calendly.com/"
+                text: "Thank you for reaching out. View our Company Profile here: https://ai.collective.social/company-profile"
             };
 
             const mailerRes = await fetch("https://api.mailersend.com/v1/email", {
