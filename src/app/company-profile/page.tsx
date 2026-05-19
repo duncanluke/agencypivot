@@ -298,19 +298,17 @@ export default function CompanyProfile() {
           </div>
         </section>
 
-        {/* Footer info for print only */}
-        <div className="hidden print:block text-center text-xs text-slate-400 pt-12 border-t border-slate-800 mt-12">
-          <strong>The Social Collective Pty Ltd.</strong>
-          <br />
-          Reg No. 2015 / 160496 / 07 | ATT: The Social Collective | 35 Carstens
-          Street, Tamboerskloof, Cape Town, South Africa
-          <br />
-          B-BBEE: Level 2
-        </div>
-
-        {/* Contact Info (Visible on Web and Print) */}
-        <div className="pt-8 text-center border-t border-slate-800/50">
-          <p className="text-slate-400 text-lg font-medium">
+        {/* Footer & Contact */}
+        <div className="pt-8 mt-8 border-t border-slate-800 text-center space-y-6">
+          <div className="hidden print:block text-xs text-slate-400">
+            <strong>The Social Collective Pty Ltd.</strong>
+            <br />
+            Reg No. 2015 / 160496 / 07 | ATT: The Social Collective | 35 Carstens
+            Street, Tamboerskloof, Cape Town, South Africa
+            <br />
+            B-BBEE: Level 2
+          </div>
+          <div className="text-slate-400 text-lg font-medium">
             Get in touch:{" "}
             <a
               href="mailto:team@collective.social"
@@ -318,7 +316,7 @@ export default function CompanyProfile() {
             >
               team@collective.social
             </a>
-          </p>
+          </div>
         </div>
       </div>
     </main>
