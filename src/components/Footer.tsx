@@ -8,9 +8,6 @@ export default function Footer() {
                     © {new Date().getFullYear()} ai.collective.social. All rights reserved.
                 </div>
                 <div className="flex items-center gap-6 text-sm text-slate-400">
-                    <Link href="/company-profile" className="hover:text-indigo-400 transition-colors">
-                        Company Profile
-                    </Link>
                     <Link href="/privacy" className="hover:text-indigo-400 transition-colors">
                         Privacy Policy
                     </Link>
