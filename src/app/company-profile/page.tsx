@@ -20,8 +20,8 @@ export const metadata = {
 
 export default function CompanyProfile() {
   return (
-    <main className="min-h-screen bg-[#03050a] text-white selection:bg-indigo-500/30 font-sans">
-      <div className="pt-32 pb-16 px-6 lg:px-12 max-w-7xl mx-auto space-y-32">
+    <main className="min-h-screen bg-[#03050a] text-white selection:bg-indigo-500/30 font-sans print:bg-white">
+      <div className="pt-32 pb-16 px-6 lg:px-12 max-w-7xl mx-auto space-y-32 print:space-y-12 print:pt-8 print:pb-8">
         {/* Header / Founder Section */}
         <div className="flex justify-end print:hidden mb-4">
           <a
@@ -32,10 +32,10 @@ export default function CompanyProfile() {
             <FileText className="w-4 h-4" /> View Company Profile PDF
           </a>
         </div>
-        <section className="flex flex-col lg:flex-row gap-12 items-center bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 rounded-3xl p-8 lg:p-16 shadow-2xl relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-indigo-600/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+        <section className="flex flex-col lg:flex-row print:flex-row gap-12 items-center bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 rounded-3xl p-8 lg:p-16 shadow-2xl relative overflow-hidden print:border-none print:shadow-none print:p-0 print:bg-none">
+          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-indigo-600/10 rounded-full blur-[120px] -z-10 pointer-events-none print:hidden"></div>
 
-          <div className="w-full lg:w-1/3 flex flex-col items-center justify-center gap-6 z-10">
+          <div className="w-full lg:w-1/3 print:w-1/3 flex flex-col items-center justify-center gap-6 z-10">
             <div className="w-full aspect-[3/4] rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center overflow-hidden shadow-[0_0_50px_rgba(79,70,229,0.15)] relative">
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10 flex items-end p-6">
                 <span className="font-bold text-white text-xl">
@@ -50,7 +50,7 @@ export default function CompanyProfile() {
             </div>
           </div>
 
-          <div className="w-full lg:w-2/3 space-y-6 z-10">
+          <div className="w-full lg:w-2/3 print:w-2/3 space-y-6 z-10">
             <h1 className="text-4xl lg:text-6xl font-black tracking-tight text-white">
               Social Collective
             </h1>
@@ -100,11 +100,11 @@ export default function CompanyProfile() {
               <strong className="text-white">validating impact data</strong>.
             </p>
 
-            <div className="w-full rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl">
+            <div className="w-full rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl print:max-h-48 print:border-none print:shadow-none flex justify-center">
               <img
                 src="/images/profile/davos.png"
                 alt="Davos Award Ceremony"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover print:object-contain print:h-48"
               />
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function CompanyProfile() {
           <div className="relative py-12">
             <div className="absolute top-1/2 left-0 w-full h-2 bg-slate-800 -translate-y-1/2 rounded-full"></div>
 
-            <div className="grid grid-cols-2 md:grid-cols-6 gap-8 relative z-10">
+            <div className="grid grid-cols-2 md:grid-cols-6 print:grid-cols-6 gap-8 relative z-10">
               {/* 2013 */}
               <div className="flex flex-col items-center text-center gap-4 relative group">
                 <div className="w-12 h-12 rounded-full bg-slate-900 border-4 border-indigo-500 flex items-center justify-center text-white font-bold shadow-[0_0_20px_rgba(79,70,229,0.4)] group-hover:scale-110 transition-transform">
@@ -231,7 +231,7 @@ export default function CompanyProfile() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 print:grid-cols-2 gap-8">
             {/* Capabilities */}
             <div className="bg-slate-900/50 border border-slate-800 p-8 rounded-2xl shadow-xl print:break-inside-avoid">
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
@@ -317,7 +317,7 @@ export default function CompanyProfile() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 print:grid-cols-2 gap-8">
             {/* Case Study 1 */}
             <div className="bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 p-8 rounded-2xl shadow-xl print:break-inside-avoid">
                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-bold uppercase tracking-wider mb-4">
@@ -355,7 +355,7 @@ export default function CompanyProfile() {
         </section>
 
         {/* Client Testimonials */}
-        <section className="space-y-12 pb-12">
+        <section className="space-y-12 pb-12 print:break-before-page">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-black text-white">
               Client Testimonials
@@ -365,9 +365,9 @@ export default function CompanyProfile() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 print:grid-cols-3 gap-8">
             {/* Allan Gray */}
-            <div className="bg-gradient-to-b from-slate-900 to-[#03050a] border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+            <div className="bg-gradient-to-b from-slate-900 to-[#03050a] border border-slate-800 p-8 rounded-2xl flex flex-col justify-between print:break-inside-avoid">
               <div className="mb-8 text-slate-300 leading-relaxed italic">
                 "The Social Collective sufficiently meets (and in instances
                 surpasses) the expectations of clients, is applicable to a range
@@ -386,7 +386,7 @@ export default function CompanyProfile() {
             </div>
 
             {/* KFC */}
-            <div className="bg-gradient-to-b from-slate-900 to-[#03050a] border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+            <div className="bg-gradient-to-b from-slate-900 to-[#03050a] border border-slate-800 p-8 rounded-2xl flex flex-col justify-between print:break-inside-avoid">
               <div className="mb-8 text-slate-300 leading-relaxed italic">
                 "Before TSC, KFC struggled with managing numerous beneficiaries
                 and receiving and aggregating granular data. They also had
@@ -408,7 +408,7 @@ export default function CompanyProfile() {
             </div>
 
             {/* Assupol */}
-            <div className="bg-gradient-to-b from-slate-900 to-[#03050a] border border-slate-800 p-8 rounded-2xl flex flex-col justify-between">
+            <div className="bg-gradient-to-b from-slate-900 to-[#03050a] border border-slate-800 p-8 rounded-2xl flex flex-col justify-between print:break-inside-avoid">
               <div className="mb-8 text-slate-300 leading-relaxed italic">
                 "The Assupol Trust did not have an M&E function before TSC and
                 they were using paper-based systems to record data which was
