@@ -21,14 +21,14 @@ export default function Home() {
           className="z-10 bg-[#05080f]/50 p-8 rounded-3xl backdrop-blur-sm border border-indigo-500/10 mt-12"
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm font-medium mb-8">
-            <Zap className="w-4 h-4" /> Strip the Waste. Automate the Essence.
+            <Zap className="w-4 h-4" /> Stop experimenting. Start scaling.
           </div>
           <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6 tracking-tight">
-            Run Your Business <br className="hidden md:block"/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">on Less.</span>
+            Isolate the Essence. <br className="hidden md:block"/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Automate the Rest.</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed font-medium">
-            We eliminate 80% of manual waste and turn what’s left into seamless AI automation. <strong className="text-white font-semibold">Complexity, stripped away. Work, automated.</strong>
+            We build software agents and intelligent systems that replace complex manual work with high-speed automation, live dashboards, and interactive AI.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
