@@ -20,9 +20,7 @@ export default function Home() {
           transition={{ duration: 0.7 }}
           className="z-10 bg-[#05080f]/50 p-8 rounded-3xl backdrop-blur-sm border border-indigo-500/10 mt-12"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 text-indigo-300 text-sm font-medium mb-8">
-            <Zap className="w-4 h-4" /> Stop experimenting. Start scaling.
-          </div>
+
           <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6 tracking-tight">
             Isolate the Essence. <br className="hidden md:block"/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Automate the Rest.</span>
