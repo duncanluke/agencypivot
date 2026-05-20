@@ -246,8 +246,8 @@ export default function CompanyProfile() {
                 <li className="flex items-start gap-3">
                   <div className="mt-1.5 w-2 h-2 rounded-full bg-cyan-400 shrink-0" />
                   <div>
-                    <strong className="text-white block">Healthcare & FMCG</strong>
-                    Supply chain autonomy and live operational scheduling.
+                    <strong className="text-white block">Healthcare</strong>
+                    Medical Education and Doctor software solutions.
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
