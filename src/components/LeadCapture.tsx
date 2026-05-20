@@ -101,7 +101,7 @@ export default function LeadCapture() {
                 )}
               </button>
               <p className="text-xs text-center text-slate-500 mt-2">
-                We'll only send value. No spam.
+                By adding your email you agree to our terms and privacy policy.
               </p>
             </motion.form>
           ) : (
