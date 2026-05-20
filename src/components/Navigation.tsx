@@ -11,7 +11,7 @@ export default function Navigation() {
         <nav className="fixed w-full z-50 top-0 border-b border-indigo-900/30 bg-[#05080f]/80 backdrop-blur-md print:hidden">
             <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
                 <Link href="/" className="text-xl font-black tracking-tighter flex items-center gap-2">
-                    <Bot className="w-8 h-8 text-indigo-500" />
+                    <img src="/logos/ai-collective-icon.png" alt="AI Collective Logo" className="w-8 h-8 object-contain" />
                     <span className="text-white">ai.collective.<span className="text-indigo-500">social</span></span>
                 </Link>
                 <div className="hidden md:flex gap-8 text-sm font-medium text-slate-300">
