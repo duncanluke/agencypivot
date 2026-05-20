@@ -24,18 +24,18 @@ export default function Home() {
             <Zap className="w-4 h-4" /> Stop experimenting. Start scaling.
           </div>
           <h1 className="text-5xl md:text-7xl font-black text-white leading-tight mb-6 tracking-tight">
-            We help you move processes onto <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">AI Agents</span>
+            Turn Your Complex Workflows Into <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">Autonomous AI Engines</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed font-medium">
-            We modernise your business by moving slow processes onto Live Dashboards with supporting AI automation. Offering a highly personal service in Johannesburg and Cape Town.
+            Stop letting legacy systems slow down your enterprise. We build custom AI Agents and Live Dashboards that automate your operations, working 24/7 without overhead. Proudly serving South Africa.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#audit" className="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-[0_0_30px_rgba(79,70,229,0.3)] hover:shadow-[0_0_40px_rgba(79,70,229,0.5)] flex items-center justify-center">
-              Request Company Profile
+            <a href="#services" className="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-[0_0_30px_rgba(79,70,229,0.3)] hover:shadow-[0_0_40px_rgba(79,70,229,0.5)] flex items-center justify-center">
+              Explore Solutions
             </a>
-            <a href="#services" className="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center">
-              Request More Information
+            <a href="#audit" className="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-8 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center">
+              Download Company Profile
             </a>
           </div>
         </motion.div>
@@ -96,6 +96,72 @@ export default function Home() {
               points={["Smart Feedback Loops", "Live Certification Dashboards", "Employee Progress Tracking"]}
             />
           </div>
+          <div className="mt-16 flex justify-center">
+             <a href="/case-studies" className="inline-flex items-center gap-2 text-indigo-400 font-bold hover:text-indigo-300 transition-colors group text-lg">
+               View Enterprise Case Studies <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Testimonials */}
+      <section className="py-24 px-6 bg-[#05080f] relative border-b border-indigo-900/20">
+        <div className="max-w-7xl mx-auto space-y-12">
+          <div className="text-center space-y-4">
+            <h2 className="text-3xl md:text-5xl font-black text-white">
+              Trusted by the Best
+            </h2>
+            <p className="text-slate-400 text-lg">
+              Hear from the enterprises scaling their impact with us.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Allan Gray */}
+            <div className="bg-slate-900/50 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between shadow-xl">
+              <div className="mb-8 text-slate-300 leading-relaxed italic">
+                "The Social Collective sufficiently meets (and in instances surpasses) the expectations of clients, is applicable to a range of themes, project complexity and KPI measurements and continues to be innovated in ways which benefit clients and make reporting easier, quicker and more insightful."
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-2 shrink-0">
+                  <span className="text-black font-bold text-xs">AG</span>
+                </div>
+                <div>
+                  <h4 className="font-bold text-white">Allan Gray</h4>
+                </div>
+              </div>
+            </div>
+
+            {/* KFC */}
+            <div className="bg-slate-900/50 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between shadow-xl">
+              <div className="mb-8 text-slate-300 leading-relaxed italic">
+                "Before TSC, KFC struggled with managing numerous beneficiaries and receiving and aggregating granular data. They also had business continuity issues whereby data was being saved in mailboxes and would be lost when members in the M&E team left."
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-2 shrink-0">
+                  <img src="/logos/kfc.png" alt="KFC" className="w-full h-full object-contain" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-white">KFC</h4>
+                </div>
+              </div>
+            </div>
+
+            {/* Assupol */}
+            <div className="bg-slate-900/50 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between shadow-xl">
+              <div className="mb-8 text-slate-300 leading-relaxed italic">
+                "The Assupol Trust did not have an M&E function before TSC and they were using paper-based systems to record data which was prone to error and time intensive. Like the others, they were also price sensitive in their search for M&E tools."
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-2 shrink-0">
+                  <img src="/logos/assupol.png" alt="Assupol" className="w-full h-full object-contain" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-white">Assupol Trust</h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -143,6 +209,11 @@ export default function Home() {
             </div>
 
           </div>
+          <div className="mt-16 flex justify-center">
+             <a href="/company-profile" className="inline-flex items-center gap-2 text-indigo-400 font-bold hover:text-indigo-300 transition-colors group text-lg">
+               Read Our Full Company Profile <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+             </a>
+          </div>
         </div>
       </section>
 
@@ -184,6 +255,11 @@ export default function Home() {
             <div className="w-full md:w-1/2">
               <ProcessAnimation />
             </div>
+          </div>
+          <div className="mt-16 flex justify-center w-full">
+             <a href="/pricing" className="inline-flex items-center gap-2 text-indigo-400 font-bold hover:text-indigo-300 transition-colors group text-lg">
+               View Pricing & Tiers <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+             </a>
           </div>
         </div>
       </section>
