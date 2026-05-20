@@ -61,38 +61,40 @@ export default function CompanyProfile() {
               </h2>
             </div>
 
-            <div className="grid gap-4 py-6 print:py-4 border-y border-slate-800/50">
-              <div className="flex items-center gap-4">
-                <Award className="w-6 h-6 text-indigo-500 shrink-0" />
-                <span className="text-slate-300">
-                  <strong className="text-white">Davos Award Recipient:</strong>{" "}
+            <div className="grid gap-6 py-6 print:py-4 border-y border-slate-800/50">
+              <div className="flex items-start gap-4">
+                <Award className="w-6 h-6 text-indigo-500 shrink-0 mt-1" />
+                <div className="text-slate-300">
+                  <strong className="text-white block mb-1">Davos Award Recipient:</strong>
                   World Economic Forum, Global Shaper
-                </span>
+                </div>
               </div>
-              <div className="flex items-center gap-4">
-                <Target className="w-6 h-6 text-indigo-500 shrink-0" />
-                <span className="text-slate-300">
-                  <strong className="text-white">Mission:</strong> Impact
-                  Reporting (ESG, Social Return, Sustainability)
-                </span>
+              <div className="flex items-start gap-4">
+                <Target className="w-6 h-6 text-indigo-500 shrink-0 mt-1" />
+                <div className="text-slate-300">
+                  <strong className="text-white block mb-1">Our Mission:</strong>
+                  To engineer the future of work by building intelligent systems and AI agents that model, simplify, and solve complex market problems.
+                </div>
               </div>
-              <div className="flex items-center gap-4">
-                <Activity className="w-6 h-6 text-indigo-500 shrink-0" />
-                <span className="text-slate-300">
-                  <strong className="text-white">The difference:</strong> Data
-                  Mapping, Analysis and Management
-                </span>
+              <div className="flex items-start gap-4">
+                <Activity className="w-6 h-6 text-indigo-500 shrink-0 mt-1" />
+                <div className="text-slate-300">
+                  <strong className="text-white block mb-1">The Difference: Systems Thinking & Elegant Automation</strong>
+                  We don't just build software; we architect clarity. The Social Collective specializes in taking deeply complex, multi-layered organizational workflows and translating them into radically simple front-end interfaces. By applying advanced systems thinking, we uncover the hidden administrative friction and backend chaos that businesses often accept as "normal," replacing them with high-performance, automated solutions that empower people.
+                </div>
               </div>
             </div>
 
-            <div className="space-y-4 mb-8 print:mb-4">
+            <div className="space-y-4 mb-8 print:mb-4 mt-8">
+              <h3 className="text-2xl font-bold text-white mb-4">Our Story & Evolution</h3>
               <p className="text-slate-400 leading-relaxed text-lg print:text-base">
-                The Social Collective was recognized as the winner of the{" "}
-                <strong className="text-white">Coca-Cola Shaping a Better Future Challenge 2014</strong>
-                , awarded at Davos through the <strong className="text-white">World Economic Forum</strong>, for its innovative use of technology to enhance employability and track social impact.
+                The Social Collective was recognized as the winner of the Coca-Cola Shaping a Better Future Challenge, awarded at Davos through the World Economic Forum, for our innovative use of technology to coordinate complex human networks and track real-world outcomes.
               </p>
               <p className="text-slate-400 leading-relaxed text-lg print:text-base">
-                As global demands for verified impact reporting have scaled, our mission has evolved. Today, we are a crucial technology for validating impact data. We build software agents and intelligent systems that isolate the essence and automate the rest—eliminating up to 80% of manual data waste and friction for implementation partners and communities. By replacing complex manual tracking with high-speed AI workflows, live dashboards, and interactive agent interfaces, we transform chaotic field data into clear, validated, and scalable impact outcomes.
+                While our heritage is rooted in solving some of the world's most chaotic data and tracking challenges, our systems have evolved to meet the demands of modern corporate enterprises.
+              </p>
+              <p className="text-slate-400 leading-relaxed text-lg print:text-base">
+                Today, we build software agents and intelligent systems that isolate the essence and automate the rest. We eliminate up to 80% of manual process waste, turning complex organizational friction into high-speed AI workflows, live executive dashboards, and interactive agent interfaces built for the future of enterprise work.
               </p>
             </div>
 
