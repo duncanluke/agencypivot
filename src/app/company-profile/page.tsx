@@ -388,7 +388,7 @@ export default function CompanyProfile() {
             {/* KFC */}
             <div className="bg-gradient-to-b from-slate-900 to-[#03050a] border border-slate-800 p-8 rounded-2xl flex flex-col justify-between print:break-inside-avoid">
               <div className="mb-8 text-slate-300 leading-relaxed italic">
-                "Before TSC, KFC struggled with managing numerous beneficiaries
+                "Before The Social Collective, KFC struggled with managing numerous beneficiaries
                 and receiving and aggregating granular data. They also had
                 business continuity issues whereby data was being saved in
                 mailboxes and would be lost when members in the M&E team left."
@@ -410,7 +410,7 @@ export default function CompanyProfile() {
             {/* Assupol */}
             <div className="bg-gradient-to-b from-slate-900 to-[#03050a] border border-slate-800 p-8 rounded-2xl flex flex-col justify-between print:break-inside-avoid">
               <div className="mb-8 text-slate-300 leading-relaxed italic">
-                "The Assupol Trust did not have an M&E function before TSC and
+                "The Assupol Trust did not have an M&E function before The Social Collective and
                 they were using paper-based systems to record data which was
                 prone to error and time intensive. Like the others, they were
                 also price sensitive in their search for M&E tools."
