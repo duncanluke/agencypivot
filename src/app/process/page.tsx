@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { CheckCircle2, Server, Database, Plug, Mail, Settings, LineChart, Target, Laptop, ShieldCheck, Clock } from "lucide-react";
-import Footer from "@/components/Footer";
 
 export default function Process() {
   return (
@@ -136,8 +135,6 @@ export default function Process() {
           View Pricing Tiers
         </a>
       </section>
-      
-      <Footer />
     </main>
   );
 }

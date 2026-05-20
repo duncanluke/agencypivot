@@ -1,5 +1,4 @@
 import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
 import Image from "next/image";
 import { ArrowRight, CheckCircle2, User, Bot, Cloud, GraduationCap, Landmark, HeartHandshake, Shield } from "lucide-react";
 
@@ -366,16 +365,11 @@ export default function CaseStudiesPage() {
         <h2 className="text-3xl md:text-5xl font-black text-white mb-6">Ready to solve your most complex operational problems?</h2>
         <p className="text-lg text-slate-400 mb-10 max-w-2xl mx-auto">Stop letting legacy systems slow down your enterprise. Let's build a custom AI engine tailored to your exact workflows.</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="/#audit" className="bg-white text-black px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-200 transition-colors">
-            Request More Information
-          </a>
           <a href="/#audit" className="bg-indigo-600 hover:bg-indigo-500 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all shadow-[0_0_30px_rgba(79,70,229,0.3)] hover:shadow-[0_0_40px_rgba(79,70,229,0.5)]">
-            Download Company Profile
+            Request More Information
           </a>
         </div>
       </section>
-
-      <Footer />
     </main>
   );
 }
