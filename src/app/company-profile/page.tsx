@@ -9,6 +9,7 @@ import {
   CheckCircle2,
   FileSpreadsheet,
   Lock,
+  ArrowRight,
 } from "lucide-react";
 
 export const metadata = {
@@ -219,7 +220,132 @@ export default function CompanyProfile() {
           </div>
         </section>
 
+        {/* Expertise & Approach Section */}
+        <section className="space-y-12 print:break-before-page">
+          <div className="text-center space-y-4">
+            <h2 className="text-3xl md:text-5xl font-black text-white">
+              Our Expertise & Approach
+            </h2>
+            <p className="text-slate-400 text-lg">
+              Outcome-driven engineering tailored to enterprise workflows.
+            </p>
+          </div>
 
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Capabilities */}
+            <div className="bg-slate-900/50 border border-slate-800 p-8 rounded-2xl shadow-xl print:break-inside-avoid">
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <ShieldCheck className="w-6 h-6 text-indigo-400" /> Core Capabilities
+              </h3>
+              <ul className="space-y-4 text-slate-300">
+                <li className="flex items-start gap-3">
+                  <div className="mt-1.5 w-2 h-2 rounded-full bg-emerald-400 shrink-0" />
+                  <div>
+                    <strong className="text-white block">Finance & Insurance</strong>
+                    Automated document processing and real-time compliance dashboards.
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="mt-1.5 w-2 h-2 rounded-full bg-cyan-400 shrink-0" />
+                  <div>
+                    <strong className="text-white block">Healthcare & FMCG</strong>
+                    Supply chain autonomy and live operational scheduling.
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="mt-1.5 w-2 h-2 rounded-full bg-indigo-400 shrink-0" />
+                  <div>
+                    <strong className="text-white block">Corporate Training</strong>
+                    Smart feedback loops and live certification tracking.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            {/* Process */}
+            <div className="bg-slate-900/50 border border-slate-800 p-8 rounded-2xl shadow-xl print:break-inside-avoid">
+              <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+                <Activity className="w-6 h-6 text-indigo-400" /> Our Process
+              </h3>
+              <ul className="space-y-4 text-slate-300">
+                <li className="flex items-start gap-3">
+                  <div className="mt-1 w-6 h-6 rounded-full bg-slate-800 flex items-center justify-center text-xs font-bold text-indigo-400 shrink-0">1</div>
+                  <div>
+                    <strong className="text-white block">Discovery & Architecture</strong>
+                    Scope audit and secure infrastructure mapping.
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="mt-1 w-6 h-6 rounded-full bg-slate-800 flex items-center justify-center text-xs font-bold text-cyan-400 shrink-0">2</div>
+                  <div>
+                    <strong className="text-white block">Build & Integration</strong>
+                    Long-term memory databases and Business Suite deployment.
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <div className="mt-1 w-6 h-6 rounded-full bg-slate-800 flex items-center justify-center text-xs font-bold text-emerald-400 shrink-0">3</div>
+                  <div>
+                    <strong className="text-white block">Testing & Deployment</strong>
+                    Human-in-the-loop review before full live autonomy.
+                  </div>
+                </li>
+              </ul>
+              <div className="mt-6 print:hidden">
+                 <a href="/process" className="text-indigo-400 hover:text-indigo-300 font-bold text-sm inline-flex items-center gap-1 transition-colors">
+                   View full process <ArrowRight className="w-4 h-4" />
+                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Proven Impact / Case Studies Section */}
+        <section className="space-y-12 print:break-before-page">
+          <div className="text-center space-y-4">
+            <h2 className="text-3xl md:text-5xl font-black text-white">
+              Proven Impact
+            </h2>
+            <p className="text-slate-400 text-lg">
+              Highlighting recent transformations across highly-regulated industries.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Case Study 1 */}
+            <div className="bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 p-8 rounded-2xl shadow-xl print:break-inside-avoid">
+               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-bold uppercase tracking-wider mb-4">
+                 Medical Education
+               </div>
+               <h3 className="text-2xl font-bold text-white mb-4">Voice-Activated Expertise Engine</h3>
+               <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                 <strong className="text-slate-200">Challenge:</strong> Navigating 1,000+ page compliance manuals during critical, real-time clinical scenarios is slow and prone to error.
+               </p>
+               <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                 <strong className="text-slate-200">Outcome:</strong> An intelligent voice assistant that validates clinical decisions against complete documentation in seconds, highlighting critical guidelines instantly.
+               </p>
+            </div>
+
+            {/* Case Study 2 */}
+            <div className="bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 p-8 rounded-2xl shadow-xl print:break-inside-avoid">
+               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-4">
+                 Corporate Training
+               </div>
+               <h3 className="text-2xl font-bold text-white mb-4">Large-Scale Attendance AI</h3>
+               <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                 <strong className="text-slate-200">Challenge:</strong> Tracking daily attendance and mapping it to multi-layered curriculums results in administrative bloat and low compliance.
+               </p>
+               <p className="text-slate-400 text-sm leading-relaxed mb-6">
+                 <strong className="text-slate-200">Outcome:</strong> A voice-driven, lightning-fast application that handles thousands of daily check-ins, automatically mapping interactions to a centralized reporting engine.
+               </p>
+            </div>
+          </div>
+
+          <div className="flex justify-center print:hidden pt-4">
+             <a href="/case-studies" className="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-6 py-3 rounded-full font-bold text-sm transition-all shadow-lg inline-flex items-center gap-2">
+               View All Enterprise Case Studies <ArrowRight className="w-4 h-4" />
+             </a>
+          </div>
+        </section>
 
         {/* Client Testimonials */}
         <section className="space-y-12 pb-12">
