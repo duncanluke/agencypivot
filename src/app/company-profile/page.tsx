@@ -441,7 +441,7 @@ export default function CompanyProfile() {
             <br />
             B-BBEE: Level 2
           </div>
-          <div className="text-slate-400 text-lg font-medium">
+          <div className="hidden print:block text-slate-400 text-lg font-medium">
             Get in touch:{" "}
             <a
               href="mailto:team@collective.social"
