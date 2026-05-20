@@ -85,20 +85,16 @@ export default function CompanyProfile() {
               </div>
             </div>
 
-            <p className="text-slate-400 leading-relaxed text-lg mb-8 print:mb-4 print:text-base">
-              The Social Collective was recognised as the winner of the{" "}
-              <strong className="text-white">
-                Coca-Cola Shaping a Better Future Challenge 2014
-              </strong>
-              , which was awarded at Davos through the{" "}
-              <strong className="text-white">World Economic Forum</strong>. The
-              company was chosen for its innovative use of technology to enhance
-              the employability of individuals while also tracking social
-              impact. Since then, the team has expanded to meet the demands of
-              impact reporting for implementation partners and communities. The
-              company has now become a crucial technology for{" "}
-              <strong className="text-white">validating impact data</strong>.
-            </p>
+            <div className="space-y-4 mb-8 print:mb-4">
+              <p className="text-slate-400 leading-relaxed text-lg print:text-base">
+                The Social Collective was recognized as the winner of the{" "}
+                <strong className="text-white">Coca-Cola Shaping a Better Future Challenge 2014</strong>
+                , awarded at Davos through the <strong className="text-white">World Economic Forum</strong>, for its innovative use of technology to enhance employability and track social impact.
+              </p>
+              <p className="text-slate-400 leading-relaxed text-lg print:text-base">
+                As global demands for verified impact reporting have scaled, our mission has evolved. Today, we are a crucial technology for validating impact data. We build software agents and intelligent systems that isolate the essence and automate the rest—eliminating up to 80% of manual data waste and friction for implementation partners and communities. By replacing complex manual tracking with high-speed AI workflows, live dashboards, and interactive agent interfaces, we transform chaotic field data into clear, validated, and scalable impact outcomes.
+              </p>
+            </div>
 
             <div className="w-full rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl print:max-h-40 print:border-slate-700/50 flex justify-center print:mt-2">
               <img
