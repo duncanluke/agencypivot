@@ -21,7 +21,7 @@ export const metadata = {
 export default function CompanyProfile() {
   return (
     <main className="min-h-screen bg-[#03050a] text-white selection:bg-indigo-500/30 font-sans print:bg-[#03050a] print:text-white" style={{ WebkitPrintColorAdjust: 'exact', printColorAdjust: 'exact' }}>
-      <div className="pt-32 pb-16 px-6 lg:px-12 max-w-7xl mx-auto space-y-32 print:space-y-12 print:py-12">
+      <div className="pt-32 pb-16 px-6 lg:px-12 max-w-7xl mx-auto space-y-32 print:space-y-12 print:pt-24 print:pb-12">
         {/* Header / Founder Section */}
         <div className="flex justify-end print:hidden mb-4">
           <a
@@ -32,10 +32,10 @@ export default function CompanyProfile() {
             <FileText className="w-4 h-4" /> View Company Profile PDF
           </a>
         </div>
-        <section className="flex flex-col lg:flex-row print:flex-row gap-12 items-center bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 rounded-3xl p-8 lg:p-16 shadow-2xl relative overflow-hidden print:p-10">
+        <section className="flex flex-col lg:flex-row print:flex-row gap-12 print:gap-8 items-center bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 rounded-3xl p-8 lg:p-16 shadow-2xl relative overflow-hidden print:p-8 print:break-inside-avoid">
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-indigo-600/10 rounded-full blur-[120px] -z-10 pointer-events-none print:hidden"></div>
 
-          <div className="w-full lg:w-1/3 print:w-1/3 flex flex-col items-center justify-center gap-6 z-10">
+          <div className="w-full lg:w-1/3 print:w-1/4 flex flex-col items-center justify-center gap-6 z-10">
             <div className="w-full aspect-[3/4] rounded-2xl bg-slate-800 border border-slate-700 flex items-center justify-center overflow-hidden shadow-[0_0_50px_rgba(79,70,229,0.15)] relative">
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent z-10 flex items-end p-6">
                 <span className="font-bold text-white text-xl">
@@ -50,7 +50,7 @@ export default function CompanyProfile() {
             </div>
           </div>
 
-          <div className="w-full lg:w-2/3 print:w-2/3 space-y-6 z-10">
+          <div className="w-full lg:w-2/3 print:w-3/4 space-y-6 print:space-y-4 z-10">
             <h1 className="text-4xl lg:text-6xl print:text-5xl font-black tracking-tight text-white">
               Social Collective
             </h1>
@@ -61,7 +61,7 @@ export default function CompanyProfile() {
               </h2>
             </div>
 
-            <div className="grid gap-4 py-6 border-y border-slate-800/50">
+            <div className="grid gap-4 py-6 print:py-4 border-y border-slate-800/50">
               <div className="flex items-center gap-4">
                 <Award className="w-6 h-6 text-indigo-500 shrink-0" />
                 <span className="text-slate-300">
@@ -85,7 +85,7 @@ export default function CompanyProfile() {
               </div>
             </div>
 
-            <p className="text-slate-400 leading-relaxed text-lg mb-8">
+            <p className="text-slate-400 leading-relaxed text-lg mb-8 print:mb-4 print:text-base">
               The Social Collective was recognised as the winner of the{" "}
               <strong className="text-white">
                 Coca-Cola Shaping a Better Future Challenge 2014
@@ -100,11 +100,11 @@ export default function CompanyProfile() {
               <strong className="text-white">validating impact data</strong>.
             </p>
 
-            <div className="w-full rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl print:max-h-56 print:border-slate-700/50 flex justify-center">
+            <div className="w-full rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl print:max-h-40 print:border-slate-700/50 flex justify-center print:mt-2">
               <img
                 src="/images/profile/davos.png"
                 alt="Davos Award Ceremony"
-                className="w-full h-auto object-cover print:object-cover print:h-56"
+                className="w-full h-auto object-cover print:object-cover print:h-40"
               />
             </div>
           </div>
