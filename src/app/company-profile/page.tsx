@@ -21,7 +21,7 @@ export const metadata = {
 export default function CompanyProfile() {
   return (
     <main className="min-h-screen bg-[#03050a] text-white selection:bg-indigo-500/30 font-sans print:bg-[#03050a] print:text-white" style={{ WebkitPrintColorAdjust: 'exact', printColorAdjust: 'exact' }}>
-      <div className="pt-32 pb-16 px-6 lg:px-12 max-w-7xl mx-auto space-y-32 print:space-y-12 print:pt-24 print:pb-12">
+      <div className="pt-32 pb-16 px-6 lg:px-12 max-w-7xl mx-auto space-y-32 print:space-y-12 print:pt-32 print:pb-12">
         {/* Header / Founder Section */}
         <div className="flex justify-end print:hidden mb-4">
           <a
@@ -111,7 +111,7 @@ export default function CompanyProfile() {
         </section>
 
         {/* Timeline Section */}
-        <section className="space-y-12 print:break-before-page">
+        <section className="space-y-12 print:break-before-page print:pt-32">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-black text-white">
               Our Journey
@@ -221,7 +221,7 @@ export default function CompanyProfile() {
         </section>
 
         {/* Expertise & Approach Section */}
-        <section className="space-y-12 print:break-before-page">
+        <section className="space-y-12 print:break-before-page print:pt-32">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-black text-white">
               Our Expertise & Approach
@@ -307,7 +307,7 @@ export default function CompanyProfile() {
         </section>
 
         {/* Proven Impact / Case Studies Section */}
-        <section className="space-y-12 print:break-before-page">
+        <section className="space-y-12 print:break-before-page print:pt-32">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-black text-white">
               Proven Impact
@@ -355,7 +355,7 @@ export default function CompanyProfile() {
         </section>
 
         {/* Client Testimonials */}
-        <section className="space-y-12 pb-12 print:break-before-page">
+        <section className="space-y-12 pb-12 print:break-before-page print:pt-32">
           <div className="text-center space-y-4">
             <h2 className="text-3xl md:text-5xl font-black text-white">
               Client Testimonials
