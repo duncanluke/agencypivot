@@ -76,7 +76,7 @@ export default function Pricing() {
           <PricingCard
             title="Digital Employee"
             price="R50,000"
-            subtitle="+ Cloud Fees"
+            subtitle="once off + R5,000/month"
             description="Deploy your first autonomous agent to handle a core workflow from start to finish."
             features={[
               "AI Environment Setup",
@@ -93,12 +93,12 @@ export default function Pricing() {
 
           {/* Tier 3 */}
           <PricingCard
-            title="Two Sprints"
+            title="Enterprise Sprint"
             price="R160,000"
-            subtitle="per month"
+            subtitle="per sprint + custom monthly services"
             description="Aggressive, high-velocity sprints for large-scale enterprise automation."
             features={[
-              "2-Week Custom Sprints",
+              "Two week custom work period",
               "From Design to Build to Delivery",
               "Multiple Agents & Workflows",
               "Complex Internal Integrations",
