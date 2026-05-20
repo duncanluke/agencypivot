@@ -259,6 +259,13 @@ export default function CompanyProfile() {
                     Smart feedback loops and live certification tracking.
                   </div>
                 </li>
+                <li className="flex items-start gap-3">
+                  <div className="mt-1.5 w-2 h-2 rounded-full bg-orange-400 shrink-0" />
+                  <div>
+                    <strong className="text-white block">Social Impact (Corporate Social Investment)</strong>
+                    Data mapping, ESG compliance, and social return reporting.
+                  </div>
+                </li>
               </ul>
             </div>
 
@@ -271,8 +278,8 @@ export default function CompanyProfile() {
                 <li className="flex items-start gap-3">
                   <div className="mt-1 w-6 h-6 rounded-full bg-slate-800 flex items-center justify-center text-xs font-bold text-indigo-400 shrink-0">1</div>
                   <div>
-                    <strong className="text-white block">Discovery & Architecture</strong>
-                    Scope audit and secure infrastructure mapping.
+                    <strong className="text-white block">Discovery & Recommendations</strong>
+                    Scope recommendations and secure infrastructure mapping.
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
