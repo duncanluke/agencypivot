@@ -37,6 +37,66 @@ export default function Home() {
         </motion.div>
       </section>
 
+      {/* Logo Band */}
+      <section className="border-y border-slate-800/50 bg-[#05080f]/50 py-10 relative z-10 overflow-hidden w-full">
+        <div className="max-w-7xl mx-auto px-6 mb-8">
+          <p className="text-center text-sm font-bold tracking-widest text-slate-500 uppercase">Trusted by industry leaders</p>
+        </div>
+        
+        <div className="relative w-full flex">
+          {/* Fading Edges */}
+          <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-[#05080f] to-transparent z-20 pointer-events-none" />
+          <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-[#05080f] to-transparent z-20 pointer-events-none" />
+
+          {/* Marquee Track */}
+          <div className="flex w-max animate-marquee hover:[animation-play-state:paused] opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
+            {[...Array(2)].map((_, i) => (
+              <div key={i} className="flex items-center gap-16 md:gap-24 px-8 md:px-12 min-w-max">
+                {/* Group 1 */}
+                <div className="flex items-center justify-center">
+                  <img src="/logos/wits.png" alt="Wits University Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/absa.png" alt="Absa Bank Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/sab.png" alt="SAB Foundation Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/kfc.png" alt="KFC Logo" className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/assupol.png" alt="Assupol Life Logo" className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/avo.png" alt="Avocado Vision Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                
+                {/* Group 2 (Repeated for extra width) */}
+                <div className="flex items-center justify-center">
+                  <img src="/logos/wits.png" alt="Wits University Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/absa.png" alt="Absa Bank Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/sab.png" alt="SAB Foundation Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/kfc.png" alt="KFC Logo" className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/assupol.png" alt="Assupol Life Logo" className="h-8 md:h-10 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="/logos/avo.png" alt="Avocado Vision Logo" className="h-10 md:h-14 w-auto object-contain brightness-0 invert opacity-60 hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Secondary Hero: Digital Employee */}
       <section className="py-20 px-6 relative bg-gradient-to-b from-[#05080f] to-[#080d1a] border-t border-indigo-900/20">
         <div className="max-w-5xl mx-auto text-center">
@@ -131,7 +191,7 @@ export default function Home() {
             {/* KFC */}
             <div className="bg-slate-900/50 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between shadow-xl">
               <div className="mb-8 text-slate-300 leading-relaxed italic">
-                "Before TSC, KFC struggled with managing numerous beneficiaries and receiving and aggregating granular data. They also had business continuity issues whereby data was being saved in mailboxes and would be lost when members in the M&E team left."
+                "Before The Social Collective, KFC struggled with managing numerous beneficiaries and receiving and aggregating granular data. They also had business continuity issues whereby data was being saved in mailboxes and would be lost when members in the M&E team left."
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-2 shrink-0">
@@ -146,7 +206,7 @@ export default function Home() {
             {/* Assupol */}
             <div className="bg-slate-900/50 border border-slate-800 p-8 rounded-2xl flex flex-col justify-between shadow-xl">
               <div className="mb-8 text-slate-300 leading-relaxed italic">
-                "The Assupol Trust did not have an M&E function before TSC and they were using paper-based systems to record data which was prone to error and time intensive. Like the others, they were also price sensitive in their search for M&E tools."
+                "The Assupol Trust did not have an M&E function before The Social Collective and they were using paper-based systems to record data which was prone to error and time intensive. Like the others, they were also price sensitive in their search for M&E tools."
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center p-2 shrink-0">
