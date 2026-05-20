@@ -61,48 +61,48 @@ export default function CompanyProfile() {
               </h2>
             </div>
 
-            <div className="grid gap-6 py-6 print:py-4 border-y border-slate-800/50">
+            <div className="grid gap-6 py-6 print:py-3 print:gap-3 border-y border-slate-800/50">
               <div className="flex items-start gap-4">
-                <Award className="w-6 h-6 text-indigo-500 shrink-0 mt-1" />
-                <div className="text-slate-300">
+                <Award className="w-6 h-6 print:w-5 print:h-5 text-indigo-500 shrink-0 mt-1" />
+                <div className="text-slate-300 print:text-sm">
                   <strong className="text-white block mb-1">Davos Award Recipient:</strong>
                   World Economic Forum, Global Shaper
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <Target className="w-6 h-6 text-indigo-500 shrink-0 mt-1" />
-                <div className="text-slate-300">
+                <Target className="w-6 h-6 print:w-5 print:h-5 text-indigo-500 shrink-0 mt-1" />
+                <div className="text-slate-300 print:text-sm">
                   <strong className="text-white block mb-1">Our Mission:</strong>
                   To engineer the future of work by building intelligent systems and AI agents that model, simplify, and solve complex market problems.
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <Activity className="w-6 h-6 text-indigo-500 shrink-0 mt-1" />
-                <div className="text-slate-300">
+                <Activity className="w-6 h-6 print:w-5 print:h-5 text-indigo-500 shrink-0 mt-1" />
+                <div className="text-slate-300 print:text-sm">
                   <strong className="text-white block mb-1">The Difference: Systems Thinking & Elegant Automation</strong>
-                  We don't just build software; we architect clarity. The Social Collective specializes in taking deeply complex, multi-layered organizational workflows and translating them into radically simple front-end interfaces. By applying advanced systems thinking, we uncover the hidden administrative friction and backend chaos that businesses often accept as "normal," replacing them with high-performance, automated solutions that empower people.
+                  We don't just build software; we architect clarity. The Social Collective specializes in taking deeply complex, multi-layered organizational workflows and translating them into radically simple front-end interfaces.
                 </div>
               </div>
             </div>
 
-            <div className="space-y-4 mb-8 print:mb-4 mt-8">
-              <h3 className="text-2xl font-bold text-white mb-4">Our Story & Evolution</h3>
-              <p className="text-slate-400 leading-relaxed text-lg print:text-base">
+            <div className="space-y-4 print:space-y-2 mb-8 print:mb-2 mt-8 print:mt-4">
+              <h3 className="text-2xl print:text-xl font-bold text-white mb-4 print:mb-2">Our Story & Evolution</h3>
+              <p className="text-slate-400 leading-relaxed text-lg print:text-sm print:leading-normal">
                 The Social Collective was recognized as the winner of the Coca-Cola Shaping a Better Future Challenge, awarded at Davos through the World Economic Forum, for our innovative use of technology to coordinate complex human networks and track real-world outcomes.
               </p>
-              <p className="text-slate-400 leading-relaxed text-lg print:text-base">
+              <p className="text-slate-400 leading-relaxed text-lg print:text-sm print:leading-normal">
                 While our heritage is rooted in solving some of the world's most chaotic data and tracking challenges, our systems have evolved to meet the demands of modern corporate enterprises.
               </p>
-              <p className="text-slate-400 leading-relaxed text-lg print:text-base">
+              <p className="text-slate-400 leading-relaxed text-lg print:text-sm print:leading-normal">
                 Today, we build software agents and intelligent systems that isolate the essence and automate the rest. We eliminate up to 80% of manual process waste, turning complex organizational friction into high-speed AI workflows, live executive dashboards, and interactive agent interfaces built for the future of enterprise work.
               </p>
             </div>
 
-            <div className="w-full rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl print:max-h-40 print:border-slate-700/50 flex justify-center print:mt-2">
+            <div className="w-full rounded-2xl overflow-hidden border border-slate-700/50 shadow-2xl print:max-h-32 print:border-slate-700/50 flex justify-center print:mt-2">
               <img
                 src="/images/profile/davos.png"
                 alt="Davos Award Ceremony"
-                className="w-full h-auto object-cover print:object-cover print:h-40"
+                className="w-full h-auto object-cover print:object-cover print:h-32"
               />
             </div>
           </div>
@@ -315,39 +315,68 @@ export default function CompanyProfile() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 print:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 print:grid-cols-2 gap-6 print:gap-4">
             {/* Case Study 1 */}
-            <div className="bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 p-8 rounded-2xl shadow-xl print:break-inside-avoid">
-               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-bold uppercase tracking-wider mb-4">
+            <div className="bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 p-6 print:p-4 rounded-2xl shadow-xl print:break-inside-avoid">
+               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 text-indigo-400 text-[10px] font-bold uppercase tracking-wider mb-3">
                  Medical Education
                </div>
-               <h3 className="text-2xl font-bold text-white mb-4">Voice-Activated Expertise Engine</h3>
-               <p className="text-slate-400 text-sm leading-relaxed mb-4">
-                 <strong className="text-slate-200">Challenge:</strong> Navigating 1,000+ page compliance manuals during critical, real-time clinical scenarios is slow and prone to error.
+               <h3 className="text-xl print:text-lg font-bold text-white mb-2">Voice-Activated Expertise Engine</h3>
+               <p className="text-slate-400 text-sm print:text-xs leading-relaxed mb-2">
+                 <strong className="text-slate-200">Challenge:</strong> Navigating 1,000+ page compliance manuals during real-time clinical scenarios is slow.
                </p>
-               <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                 <strong className="text-slate-200">Outcome:</strong> An intelligent voice assistant that validates clinical decisions against complete documentation in seconds, highlighting critical guidelines instantly.
+               <p className="text-slate-400 text-sm print:text-xs leading-relaxed">
+                 <strong className="text-slate-200">Outcome:</strong> An intelligent voice assistant that validates clinical decisions instantly.
                </p>
             </div>
 
             {/* Case Study 2 */}
-            <div className="bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 p-8 rounded-2xl shadow-xl print:break-inside-avoid">
-               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-4">
+            <div className="bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 p-6 print:p-4 rounded-2xl shadow-xl print:break-inside-avoid">
+               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-bold uppercase tracking-wider mb-3">
                  Corporate Training
                </div>
-               <h3 className="text-2xl font-bold text-white mb-4">Large-Scale Attendance AI</h3>
-               <p className="text-slate-400 text-sm leading-relaxed mb-4">
-                 <strong className="text-slate-200">Challenge:</strong> Tracking daily attendance and mapping it to multi-layered curriculums results in administrative bloat and low compliance.
+               <h3 className="text-xl print:text-lg font-bold text-white mb-2">Large-Scale Attendance AI</h3>
+               <p className="text-slate-400 text-sm print:text-xs leading-relaxed mb-2">
+                 <strong className="text-slate-200">Challenge:</strong> Tracking attendance to multi-layered curriculums results in administrative bloat.
                </p>
-               <p className="text-slate-400 text-sm leading-relaxed mb-6">
-                 <strong className="text-slate-200">Outcome:</strong> A voice-driven, lightning-fast application that handles thousands of daily check-ins, automatically mapping interactions to a centralized reporting engine.
+               <p className="text-slate-400 text-sm print:text-xs leading-relaxed">
+                 <strong className="text-slate-200">Outcome:</strong> A voice-driven application handling thousands of check-ins to a central engine.
+               </p>
+            </div>
+
+            {/* Case Study 3 */}
+            <div className="bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 p-6 print:p-4 rounded-2xl shadow-xl print:break-inside-avoid">
+               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-[10px] font-bold uppercase tracking-wider mb-3">
+                 ESG Reporting
+               </div>
+               <h3 className="text-xl print:text-lg font-bold text-white mb-2">Autonomous Data Agents</h3>
+               <p className="text-slate-400 text-sm print:text-xs leading-relaxed mb-2">
+                 <strong className="text-slate-200">Challenge:</strong> Tracking non-financial indicators across complex ecosystems is fractured.
+               </p>
+               <p className="text-slate-400 text-sm print:text-xs leading-relaxed">
+                 <strong className="text-slate-200">Outcome:</strong> A secure ledger and AI agent that aggregates validated impact data automatically.
+               </p>
+            </div>
+
+            {/* Case Study 4 */}
+            <div className="bg-gradient-to-br from-slate-900 to-[#03050a] border border-slate-800 p-6 print:p-4 rounded-2xl shadow-xl print:break-inside-avoid">
+               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-[10px] font-bold uppercase tracking-wider mb-3">
+                 Venture Building
+               </div>
+               <h3 className="text-xl print:text-lg font-bold text-white mb-2">Enterprise Software Automation</h3>
+               <p className="text-slate-400 text-sm print:text-xs leading-relaxed mb-2">
+                 <strong className="text-slate-200">Challenge:</strong> Launching complex enterprise workflows typically takes 6 to 12 months.
+               </p>
+               <p className="text-slate-400 text-sm print:text-xs leading-relaxed">
+                 <strong className="text-slate-200">Outcome:</strong> Engineered a production-ready, highly automated business application in 14 days.
                </p>
             </div>
           </div>
 
-          <div className="flex justify-center print:hidden pt-4">
-             <a href="/case-studies" className="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-6 py-3 rounded-full font-bold text-sm transition-all shadow-lg inline-flex items-center gap-2">
-               View All Enterprise Case Studies <ArrowRight className="w-4 h-4" />
+          <div className="flex justify-center pt-4">
+             <a href="https://ai.collective.social/case-studies" className="bg-slate-800 hover:bg-slate-700 text-white border border-slate-700 px-6 py-3 rounded-full font-bold text-sm transition-all shadow-lg inline-flex items-center gap-2 print:bg-transparent print:border-none print:shadow-none print:text-slate-500 print:p-0">
+               View All Enterprise Case Studies <ArrowRight className="w-4 h-4 print:hidden" />
+               <span className="hidden print:inline text-xs ml-1">(ai.collective.social/case-studies)</span>
              </a>
           </div>
         </section>
