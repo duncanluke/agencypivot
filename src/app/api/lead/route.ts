@@ -32,7 +32,7 @@ export async function POST(req: Request) {
             
             const payload = {
                 from: { email: senderEmail, name: "Social Collective" },
-                to: [ { email: email, name: email } ],
+                to: [ { email: email, name: email.split("@")[0] } ],
                 bcc: [ { email: "team@collective.social", name: "Social Collective Team" } ],
                 subject: "Your Requested Company Profile from Social Collective",
                 html: `
