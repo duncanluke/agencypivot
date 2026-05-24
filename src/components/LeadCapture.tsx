@@ -115,7 +115,7 @@ export default function LeadCapture() {
               </div>
               <h4 className="text-xl font-bold text-white mb-2">Request Received!</h4>
               <p className="text-slate-400 text-sm">
-                We've sent a follow-up to <span className="text-slate-300 font-medium">{email}</span>. Our team will review your details shortly.
+                We've sent the company profile to <span className="text-slate-300 font-medium">{email}</span>. Please check your inbox.
               </p>
             </motion.div>
           )}
