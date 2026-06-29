@@ -114,7 +114,7 @@ export default function BlueprintGenerator() {
                             Start Over
                         </button>
                         <Link
-                            href="/contact"
+                            href="/contact-us"
                             className="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-8 py-4 rounded-xl transition-colors flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(79,70,229,0.3)] flex-1"
                         >
                             Let us build this for you <ArrowRight className="w-4 h-4" />
